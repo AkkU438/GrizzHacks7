@@ -14,8 +14,7 @@ chrome_options = Options()
 chrome_options.add_argument("--headless")  # Run in headless mode
 service = Service(ChromeDriverManager().install())
 driver = webdriver.Chrome(service=service, options=chrome_options)
-driver.set_page_load_timeout(180)  # Set a longer timeout if necessary
-driver.set_script_timeout(180)  # Adjust the script timeout as well
+
 
 def get_player_details(player_url):
     """
@@ -138,7 +137,7 @@ else:
     print("Sample Data:")
     print(df.head())  # Show a few rows
     
-    df.to_csv("nfl_draft_prospects_fixed.csv", index=False)
+    df.to_csv("Data/nfl_draft_prospects_fixed.csv", index=False)
     print("CSV saved successfully!")
 
 driver.quit()
