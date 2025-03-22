@@ -1,63 +1,93 @@
 import pandas as pd
 from sklearn.tree import DecisionTreeRegressor
+from sklearn.model_selection import train_test_split
 from sklearn.metrics import (
     mean_squared_error,
     mean_absolute_error,
+    median_absolute_error,
     r2_score,
-    explained_variance_score
+    explained_variance_score,
+    max_error,
+    mean_squared_log_error,
+    mean_poisson_deviance,
+    mean_gamma_deviance
 )
-import joblib
-import os
 import numpy as np
 import json
+import os
 
-df = pd.read_csv("Data/Train.csv")
+# === 1. Load combined dataset ===
+df = pd.read_csv("Data/data.csv")
 label_column = "PPR Points"
+
+# Split features and label
 X_raw = df.drop(columns=[label_column])
 y = df[label_column]
+
+# One-hot encode all categorical features
 X = pd.get_dummies(X_raw)
 
-model = DecisionTreeRegressor()
-model.fit(X, y)
+# === 2. Split into train and validation sets ===
+X_train, X_val, y_train, y_val = train_test_split(
+    X, y, test_size=0.2, random_state=42
+)
 
-predictions = model.predict(X)
-mse = mean_squared_error(y, predictions)
-rmse = np.sqrt(mse)
-mae = mean_absolute_error(y, predictions)
-r2 = r2_score(y, predictions)
-explained_var = explained_variance_score(y, predictions)
+# === 3. Train model (with some constraints to reduce overfitting) ===
+model = DecisionTreeRegressor(
+    max_depth=5,
+    min_samples_leaf=3,
+    random_state=42
+)
+model.fit(X_train, y_train)
 
-print("📊 MODEL EVALUATION STATS 📊")
-print(f"MSE: {mse:.4f}  RMSE: {rmse:.4f}  MAE: {mae:.4f}")
-print(f"R²: {r2:.4f}  Explained Variance: {explained_var:.4f}")
+# === 4. Predict on validation set for evaluation ===
+val_predictions = model.predict(X_val)
 
-importances = pd.Series(model.feature_importances_, index=X.columns)
-least_useful = importances[importances == 0].index.tolist()
-print(f"🗑️ Features with 0 importance: {least_useful}")
+# === 5. Compute model statistics (on validation set) ===
+# Average error (ME) = mean(prediction - actual)
+average_error = float(np.mean(val_predictions - y_val))
 
-test_df = pd.read_csv("Data/Test.csv")
+model_stats = {
+    "Mean Squared Error (MSE)": float(mean_squared_error(y_val, val_predictions)),
+    "Root Mean Squared Error (RMSE)": float(
+        np.sqrt(mean_squared_error(y_val, val_predictions))
+    ),
+    "Mean Absolute Error (MAE)": float(mean_absolute_error(y_val, val_predictions)),
+    "Median Absolute Error (Median AE)": float(
+        median_absolute_error(y_val, val_predictions)
+    ),
+    "R^2 Score": float(r2_score(y_val, val_predictions)),
+    "Explained Variance": float(explained_variance_score(y_val, val_predictions)),
+    "Max Error": float(max_error(y_val, val_predictions)),
+    "Mean Squared Log Error (MSLE)": float(mean_squared_log_error(y_val, val_predictions)),
+    "Poisson Deviance": float(mean_poisson_deviance(y_val, val_predictions)),
+    "Gamma Deviance": float(mean_gamma_deviance(y_val, val_predictions)),
+    "Average Error (ME)": average_error
+}
 
-original_test_data = test_df.copy()
+# === 6. Make predictions on the *full* dataset ===
+full_predictions = model.predict(X)
 
-X_test_raw = pd.get_dummies(test_df)
-X_test_aligned = X_test_raw.reindex(columns=X.columns, fill_value=0)
-test_predictions = model.predict(X_test_aligned)
-
-
+# === 7. Build JSON output ===
 all_predictions = []
+for i in range(len(df)):
+    row_dict = {
+        "Predicted PPR Points": float(full_predictions[i]),
+        "Actual PPR Points": float(y.iloc[i])
+    }
+    # Add original non-encoded features
+    row_features = X_raw.iloc[i].to_dict()
+    row_dict.update(row_features)
 
-for i, row in original_test_data.iterrows():
-    row_dict = row.to_dict()
-    row_dict["Predicted PPR Points"] = float(test_predictions[i])
     all_predictions.append(row_dict)
 
+# Append validation stats at the end
+all_predictions.append({"Model Statistics": model_stats})
+
+# === 8. Save to JSON ===
 os.makedirs("Predictions", exist_ok=True)
-with open("Predictions/all_predictions.json", "w") as f:
+output_path = "Predictions/all_predictions.json"
+with open(output_path, "w") as f:
     json.dump(all_predictions, f, indent=2)
 
-for i, row_data in enumerate(all_predictions):
-    filename = f"Predictions/prediction_{i + 1}.json"
-    with open(filename, "w") as f:
-        json.dump(row_data, f, indent=2)
-
-print("✅ Predictions exported to JSON files in the 'Predictions' folder.")
+print(f"✅ Predictions + validation stats (including average error) saved to: {output_path}")
