@@ -1,7 +1,5 @@
 [
   {
-    "Predicted PPR Points": 348.1,
-    "Actual PPR Points": 391.3,
     "Player": "Christian McCaffery",
     "Repeats": 2,
     "Best Year": 2023,
@@ -22,11 +20,11 @@
     "Recieving Yards Per Game": 31.7,
     "Recieving TDs": 10,
     "Plays": 731,
-    "Age": 27
+    "Age": 27,
+    "Predicted PPR Points": 355.3,
+    "Actual PPR Points": 391.3
   },
   {
-    "Predicted PPR Points": 274.49999999999994,
-    "Actual PPR Points": 377.8,
     "Player": "Alvin Kamara",
     "Repeats": 1,
     "Best Year": 2020,
@@ -47,11 +45,11 @@
     "Recieving Yards Per Game": 28.5,
     "Recieving TDs": 7,
     "Plays": 284,
-    "Age": 28
+    "Age": 28,
+    "Predicted PPR Points": 287.9,
+    "Actual PPR Points": 377.8
   },
   {
-    "Predicted PPR Points": 318.46666666666664,
-    "Actual PPR Points": 373.1,
     "Player": "Jonathan Taylor",
     "Repeats": 1,
     "Best Year": 2021,
@@ -72,11 +70,11 @@
     "Recieving Yards Per Game": 9.9,
     "Recieving TDs": 5,
     "Plays": 968,
-    "Age": 25
+    "Age": 25,
+    "Predicted PPR Points": 373.1,
+    "Actual PPR Points": 373.1
   },
   {
-    "Predicted PPR Points": 348.1,
-    "Actual PPR Points": 362.9,
     "Player": "Jahmyr Gibbs",
     "Repeats": 1,
     "Best Year": 2024,
@@ -97,11 +95,11 @@
     "Recieving Yards Per Game": 39.3,
     "Recieving TDs": 8,
     "Plays": 487,
-    "Age": 22
+    "Age": 22,
+    "Predicted PPR Points": 362.9,
+    "Actual PPR Points": 362.9
   },
   {
-    "Predicted PPR Points": 348.1,
-    "Actual PPR Points": 355.3,
     "Player": "Saquon Barkley",
     "Repeats": 2,
     "Best Year": 2024,
@@ -122,11 +120,11 @@
     "Recieving Yards Per Game": 31.4,
     "Recieving TDs": 8,
     "Plays": 773,
-    "Age": 27
+    "Age": 27,
+    "Predicted PPR Points": 355.3,
+    "Actual PPR Points": 355.3
   },
   {
-    "Predicted PPR Points": 348.1,
-    "Actual PPR Points": 341.7,
     "Player": "Bijan Robinson",
     "Repeats": 1,
     "Best Year": 2024,
@@ -147,11 +145,11 @@
     "Recieving Yards Per Game": 26.0,
     "Recieving TDs": 8,
     "Plays": 599,
-    "Age": 21
+    "Age": 21,
+    "Predicted PPR Points": 341.7,
+    "Actual PPR Points": 341.7
   },
   {
-    "Predicted PPR Points": 348.1,
-    "Actual PPR Points": 337.8,
     "Player": "Dalvin Cook",
     "Repeats": 1,
     "Best Year": 2020,
@@ -172,11 +170,11 @@
     "Recieving Yards Per Game": 24.6,
     "Recieving TDs": 2,
     "Plays": 766,
-    "Age": 29
+    "Age": 29,
+    "Predicted PPR Points": 337.8,
+    "Actual PPR Points": 337.8
   },
   {
-    "Predicted PPR Points": 348.1,
-    "Actual PPR Points": 336.4,
     "Player": "Derrick Henry",
     "Repeats": 3,
     "Best Year": 2024,
@@ -197,11 +195,11 @@
     "Recieving Yards Per Game": 7.3,
     "Recieving TDs": 3,
     "Plays": 619,
-    "Age": 30
+    "Age": 30,
+    "Predicted PPR Points": 336.4,
+    "Actual PPR Points": 336.4
   },
   {
-    "Predicted PPR Points": 274.49999999999994,
-    "Actual PPR Points": 328.3,
     "Player": "Josh Jacobs",
     "Repeats": 2,
     "Best Year": 2022,
@@ -222,11 +220,11 @@
     "Recieving Yards Per Game": 13.6,
     "Recieving TDs": 5,
     "Plays": 299,
-    "Age": 26
+    "Age": 26,
+    "Predicted PPR Points": 267.9,
+    "Actual PPR Points": 328.3
   },
   {
-    "Predicted PPR Points": 286.175,
-    "Actual PPR Points": 300.7,
     "Player": "Najee Harris",
     "Repeats": 1,
     "Best Year": 2021,
@@ -247,11 +245,11 @@
     "Recieving Yards Per Game": 14.2,
     "Recieving TDs": 11,
     "Plays": 718,
-    "Age": 26
+    "Age": 26,
+    "Predicted PPR Points": 300.7,
+    "Actual PPR Points": 300.7
   },
   {
-    "Predicted PPR Points": 318.46666666666664,
-    "Actual PPR Points": 299.9,
     "Player": "De'Von Achane",
     "Repeats": 1,
     "Best Year": 2024,
@@ -272,11 +270,11 @@
     "Recieving Yards Per Game": 18.5,
     "Recieving TDs": 5,
     "Plays": 434,
-    "Age": 22
+    "Age": 22,
+    "Predicted PPR Points": 299.9,
+    "Actual PPR Points": 299.9
   },
   {
-    "Predicted PPR Points": 286.175,
-    "Actual PPR Points": 290.5,
     "Player": "Breece Hall",
     "Repeats": 1,
     "Best Year": 2023,
@@ -297,11 +295,11 @@
     "Recieving Yards Per Game": 20.4,
     "Recieving TDs": 6,
     "Plays": 800,
-    "Age": 23
+    "Age": 23,
+    "Predicted PPR Points": 290.5,
+    "Actual PPR Points": 290.5
   },
   {
-    "Predicted PPR Points": 274.49999999999994,
-    "Actual PPR Points": 287.9,
     "Player": "Joe Mixon",
     "Repeats": 1,
     "Best Year": 2021,
@@ -322,11 +320,11 @@
     "Recieving Yards Per Game": 35.8,
     "Recieving TDs": 9,
     "Plays": 365,
-    "Age": 27
+    "Age": 27,
+    "Predicted PPR Points": 287.9,
+    "Actual PPR Points": 287.9
   },
   {
-    "Predicted PPR Points": 318.46666666666664,
-    "Actual PPR Points": 282.4,
     "Player": "Travis Etienne Jr.",
     "Repeats": 1,
     "Best Year": 2023,
@@ -347,11 +345,11 @@
     "Recieving Yards Per Game": 21.0,
     "Recieving TDs": 8,
     "Plays": 788,
-    "Age": 25
+    "Age": 25,
+    "Predicted PPR Points": 299.9,
+    "Actual PPR Points": 282.4
   },
   {
-    "Predicted PPR Points": 286.175,
-    "Actual PPR Points": 281.4,
     "Player": "Nick Chubb",
     "Repeats": 1,
     "Best Year": 2022,
@@ -372,11 +370,11 @@
     "Recieving Yards Per Game": 7.7,
     "Recieving TDs": 4,
     "Plays": 789,
-    "Age": 28
+    "Age": 28,
+    "Predicted PPR Points": 281.4,
+    "Actual PPR Points": 281.4
   },
   {
-    "Predicted PPR Points": 286.175,
-    "Actual PPR Points": 272.1,
     "Player": "Kyren Williams",
     "Repeats": 1,
     "Best Year": 2024,
@@ -397,11 +395,11 @@
     "Recieving Yards Per Game": 24.1,
     "Recieving TDs": 4,
     "Plays": 497,
-    "Age": 23
+    "Age": 23,
+    "Predicted PPR Points": 272.1,
+    "Actual PPR Points": 272.1
   },
   {
-    "Predicted PPR Points": 274.49999999999994,
-    "Actual PPR Points": 267.9,
     "Player": "Rachaad White",
     "Repeats": 1,
     "Best Year": 2023,
@@ -422,11 +420,11 @@
     "Recieving Yards Per Game": 40.5,
     "Recieving TDs": 2,
     "Plays": 275,
-    "Age": 25
+    "Age": 25,
+    "Predicted PPR Points": 267.9,
+    "Actual PPR Points": 267.9
   },
   {
-    "Predicted PPR Points": 274.49999999999994,
-    "Actual PPR Points": 267.7,
     "Player": "Raheem Mostert",
     "Repeats": 1,
     "Best Year": 2023,
@@ -447,21 +445,123 @@
     "Recieving Yards Per Game": 2.8,
     "Recieving TDs": 0,
     "Plays": 155,
-    "Age": 31
+    "Age": 31,
+    "Predicted PPR Points": 267.7,
+    "Actual PPR Points": 267.7
+  },
+  {
+    "Player": "Nick Chubb",
+    "Repeats": 1,
+    "Best Year": 2022,
+    "Team": "CLE",
+    "College": "Georgia",
+    "Conference": "SEC",
+    "Draft": 35,
+    "Years": 4,
+    "Games": 47,
+    "Carries": 758,
+    "Rushing Yards": 4769,
+    "Yards Per Carry": 6.3,
+    "Yards Per Game": 101.5,
+    "Rushing TDs": 44,
+    "Receptions": 31,
+    "Recieving Yards": 361,
+    "Yards Per Reception": 11.6,
+    "Recieving Yards Per Game": 7.7,
+    "Recieving TDs": 4,
+    "Plays": 789,
+    "Age": 28,
+    "Predicted PPR Points": 281.4,
+    "Actual PPR Points": 281.4
+  },
+  {
+    "Player": "Kyren Williams",
+    "Repeats": 1,
+    "Best Year": 2024,
+    "Team": "LAR",
+    "College": "Notre Dame",
+    "Conference": "Ind/ACC",
+    "Draft": 164,
+    "Years": 3,
+    "Games": 28,
+    "Carries": 419,
+    "Rushing Yards": 2153,
+    "Yards Per Carry": 5.1,
+    "Yards Per Game": 76.9,
+    "Rushing TDs": 27,
+    "Receptions": 78,
+    "Recieving Yards": 675,
+    "Yards Per Reception": 8.7,
+    "Recieving Yards Per Game": 24.1,
+    "Recieving TDs": 4,
+    "Plays": 497,
+    "Age": 23,
+    "Predicted PPR Points": 272.1,
+    "Actual PPR Points": 272.1
+  },
+  {
+    "Player": "Rachaad White",
+    "Repeats": 1,
+    "Best Year": 2023,
+    "Team": "TB",
+    "College": "Arizona St.",
+    "Conference": "PAC-12",
+    "Draft": 91,
+    "Years": 2,
+    "Games": 15,
+    "Carries": 224,
+    "Rushing Yards": 1426,
+    "Yards Per Carry": 6.4,
+    "Yards Per Game": 95.1,
+    "Rushing TDs": 20,
+    "Receptions": 51,
+    "Recieving Yards": 607,
+    "Yards Per Reception": 11.9,
+    "Recieving Yards Per Game": 40.5,
+    "Recieving TDs": 2,
+    "Plays": 275,
+    "Age": 25,
+    "Predicted PPR Points": 267.9,
+    "Actual PPR Points": 267.9
+  },
+  {
+    "Player": "Raheem Mostert",
+    "Repeats": 1,
+    "Best Year": 2023,
+    "Team": "MIA",
+    "College": "Purdue",
+    "Conference": "BIG 10",
+    "Draft": 0,
+    "Years": 4,
+    "Games": 44,
+    "Carries": 136,
+    "Rushing Yards": 759,
+    "Yards Per Carry": 5.6,
+    "Yards Per Game": 17.3,
+    "Rushing TDs": 6,
+    "Receptions": 19,
+    "Recieving Yards": 122,
+    "Yards Per Reception": 6.4,
+    "Recieving Yards Per Game": 2.8,
+    "Recieving TDs": 0,
+    "Plays": 155,
+    "Age": 31,
+    "Predicted PPR Points": 267.7,
+    "Actual PPR Points": 267.7
   },
   {
     "Model Statistics": {
-      "Mean Squared Error (MSE)": 3868.1325000000056,
-      "Root Mean Squared Error (RMSE)": 62.194312440929885,
-      "Mean Absolute Error (MAE)": 51.67500000000004,
-      "Median Absolute Error (Median AE)": 48.50000000000003,
-      "R^2 Score": -4.8694609381446,
-      "Explained Variance": -1.3038618493365726,
-      "Max Error": 103.30000000000007,
-      "Mean Squared Log Error (MSLE)": 0.036791407350110515,
-      "Poisson Deviance": 12.483911803368812,
-      "Gamma Deviance": 0.04060584429287539,
-      "Average Error (ME)": 48.47500000000002
+      "Mean Squared Error (MSE)": 2666.4840000000017,
+      "Root Mean Squared Error (RMSE)": 51.63800925674809,
+      "Mean Absolute Error (MAE)": 40.76000000000001,
+      "Median Absolute Error (Median AE)": 36.0,
+      "R^2 Score": -0.14315106713031556,
+      "Explained Variance": 0.3454669983403734,
+      "Max Error": 89.90000000000003,
+      "Mean Squared Log Error (MSLE)": 0.025463129767986332,
+      "Poisson Deviance": 8.560716130460197,
+      "Gamma Deviance": 0.027694100815090474,
+      "Average Error (ME)": 33.76000000000001
     }
   }
 ]
