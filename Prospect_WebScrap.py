@@ -14,13 +14,15 @@ chrome_options = Options()
 chrome_options.add_argument("--headless")  # Run in headless mode
 service = Service(ChromeDriverManager().install())
 driver = webdriver.Chrome(service=service, options=chrome_options)
+driver.set_page_load_timeout(180)  # Set a longer timeout if necessary
+driver.set_script_timeout(180)  # Adjust the script timeout as well
 
 def get_player_details(player_url):
     """
     Given a player's individual page URL, scrape details like Height, Weight, and College.
     """
     driver.get(player_url)
-    time.sleep(10)  # Allow time for content to load
+    time.sleep(20)  # Allow time for content to load
     
     soup = BeautifulSoup(driver.page_source, 'html.parser')
 
