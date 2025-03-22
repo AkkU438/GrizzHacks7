@@ -16,23 +16,23 @@ import numpy as np
 import json
 import os
 
-# === 1. Load combined dataset ===
+
 df = pd.read_csv("Data/data.csv")
 label_column = "PPR Points"
 
-# Split features and label
+
 X_raw = df.drop(columns=[label_column])
 y = df[label_column]
 
-# One-hot encode all categorical features
+
 X = pd.get_dummies(X_raw)
 
-# === 2. Split into train and validation sets ===
+
 X_train, X_val, y_train, y_val = train_test_split(
     X, y, test_size=0.2, random_state=42
 )
 
-# === 3. Train model (with some constraints to reduce overfitting) ===
+
 model = DecisionTreeRegressor(
     max_depth=5,
     min_samples_leaf=3,
@@ -40,11 +40,11 @@ model = DecisionTreeRegressor(
 )
 model.fit(X_train, y_train)
 
-# === 4. Predict on validation set for evaluation ===
+
 val_predictions = model.predict(X_val)
 
-# === 5. Compute model statistics (on validation set) ===
-# Average error (ME) = mean(prediction - actual)
+
+
 average_error = float(np.mean(val_predictions - y_val))
 
 model_stats = {
@@ -62,29 +62,29 @@ model_stats = {
     "Mean Squared Log Error (MSLE)": float(mean_squared_log_error(y_val, val_predictions)),
     "Poisson Deviance": float(mean_poisson_deviance(y_val, val_predictions)),
     "Gamma Deviance": float(mean_gamma_deviance(y_val, val_predictions)),
-    "Average Error (ME)": average_error
+    "Average Error (ME)": abs(average_error)
 }
 
-# === 6. Make predictions on the *full* dataset ===
+
 full_predictions = model.predict(X)
 
-# === 7. Build JSON output ===
+
 all_predictions = []
 for i in range(len(df)):
     row_dict = {
         "Predicted PPR Points": float(full_predictions[i]),
         "Actual PPR Points": float(y.iloc[i])
     }
-    # Add original non-encoded features
+    
     row_features = X_raw.iloc[i].to_dict()
     row_dict.update(row_features)
 
     all_predictions.append(row_dict)
 
-# Append validation stats at the end
+
 all_predictions.append({"Model Statistics": model_stats})
 
-# === 8. Save to JSON ===
+
 os.makedirs("Predictions", exist_ok=True)
 output_path = "Predictions/all_predictions.json"
 with open(output_path, "w") as f:

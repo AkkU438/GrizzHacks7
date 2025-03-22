@@ -461,7 +461,7 @@
       "Mean Squared Log Error (MSLE)": 0.036791407350110515,
       "Poisson Deviance": 12.483911803368812,
       "Gamma Deviance": 0.04060584429287539,
-      "Average Error (ME)": -48.47500000000002
+      "Average Error (ME)": 48.47500000000002
     }
   }
 ]
