@@ -8,3 +8,4 @@ test_df = pd.read_csv()
 
 #convert dataset into tf dataset
 train_ds = tfdf.keras.pd_dataframe_to_tf_dataset(train_df)
+test_ds = tfdf.keras.pd_dataframe_to_tf_dataset(test_df)
