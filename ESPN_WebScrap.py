@@ -19,7 +19,7 @@ driver.implicitly_wait(5)
 
 soup = BeautifulSoup(driver.page_source, 'html.parser')
 
-players = soup.find_all('h4', class_='team-meta_name')
+players = soup.find_all('h4', class_='team-meta__name')
 
 
 
@@ -32,3 +32,9 @@ for player in players:
     prospect_names.append(full_name)
 
 print(prospect_names)
+
+driver.quit()
+
+df = pd.DataFrame(prospect_names, columns=['Player Name'])
+df.to_csv("nfl_draft_prospects.csv", index=False)
+print("CSV printed")
