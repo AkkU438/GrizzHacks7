@@ -9,9 +9,9 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from webdriver_manager.chrome import ChromeDriverManager
 
-# Set up Selenium WebDriver
+
 chrome_options = Options()
-chrome_options.add_argument("--headless")  # Run in headless mode
+chrome_options.add_argument("--headless")  
 service = Service(ChromeDriverManager().install())
 driver = webdriver.Chrome(service=service, options=chrome_options)
 
@@ -21,7 +21,7 @@ def get_player_details(player_url):
     Given a player's individual page URL, scrape details like Height, Weight, and College.
     """
     driver.get(player_url)
-    time.sleep(20)  # Allow time for content to load
+    time.sleep(20)  
     
     soup = BeautifulSoup(driver.page_source, 'html.parser')
 
@@ -31,7 +31,7 @@ def get_player_details(player_url):
         'College': 'N/A'
     }
     
-    # These containers hold each stat item (Height, Weight, College, etc.)
+    
     player_stats = soup.find_all('div', class_='player-info-details__item')
 
     print(f"Scraping details from: {player_url}")
@@ -41,7 +41,7 @@ def get_player_details(player_url):
         return player_info
 
     for stat in player_stats:
-        # FIX: Corrected the typo here from 'player-infor-details__title' to 'player-info-details__title'
+        
         title = stat.find('h6', class_='player-info-details__title')
         value = stat.find('div', class_='player-info-details__value')
 
@@ -65,11 +65,11 @@ def get_player_names(url):
     """
     driver.get(url)
     
-    # Wait for the page to load
+    
     WebDriverWait(driver, 10).until(
         EC.presence_of_all_elements_located((By.CLASS_NAME, 'team-meta__name'))
     )
-    time.sleep(3)  # Give JavaScript extra time to load if needed
+    time.sleep(3)  
     
     soup = BeautifulSoup(driver.page_source, 'html.parser')
     players = soup.find_all('h4', class_='team-meta__name')
@@ -86,7 +86,7 @@ def get_player_names(url):
         first_name_tag = player.find('span', class_='firstName')
         last_name_tag = player.find('span', class_='lastName')
         
-        # Skip if either span is missing
+        
         if not first_name_tag or not last_name_tag:
             print("Skipping a player due to missing name tag.")
             continue
@@ -95,8 +95,8 @@ def get_player_names(url):
         last_name = last_name_tag.text.strip()
         full_name = f"{first_name} {last_name}"
         
-        # Attempt to find the player's individual page link
-        row = player.find_parent('tr')  # Move up to the <tr> element
+        
+        row = player.find_parent('tr')  
         player_link_tag = row.find('a', href=True) if row else None
         
         if player_link_tag:
@@ -104,7 +104,7 @@ def get_player_names(url):
             print(f"Fetching details for {full_name} -> {player_url}")
             player_data = get_player_details(player_url)
             
-            # Append data to our list
+            
             prospect_names.append([full_name,
                                    player_data['Height'],
                                    player_data['Weight'],
@@ -116,10 +116,10 @@ def get_player_names(url):
     return prospect_names
 
 
-# ------------------- Main Script -------------------
+
 
 all_prospect_names = []
-# Adjust the range if you want to scrape more or fewer pages
+
 for page_num in range(1, 6):
     url = f'https://www.nfldraftbuzz.com/positions/RB/{page_num}/2025'
     prospect_names = get_player_names(url)
@@ -128,14 +128,14 @@ for page_num in range(1, 6):
         all_prospect_names.extend(prospect_names)
     print(f"Total prospects collected so far: {len(all_prospect_names)}\n")
 
-# Final check and DataFrame creation
+
 if not all_prospect_names:
     print("No data was scraped. Check website structure and class names.")
 else:
     df = pd.DataFrame(all_prospect_names, columns=['Player Name', 'Height', 'Weight', 'College'])
     
     print("Sample Data:")
-    print(df.head())  # Show a few rows
+    print(df.head())  
     
     df.to_csv("Data/nfl_draft_prospects_fixed.csv", index=False)
     print("CSV saved successfully!")
