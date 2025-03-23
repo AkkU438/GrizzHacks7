@@ -1,467 +1,438 @@
-[
-  {
-    "Predicted PPR Points": 348.1,
-    "Actual PPR Points": 391.3,
-    "Player": "Christian McCaffery",
-    "Repeats": 2,
-    "Best Year": 2023,
-    "Team": "SF",
-    "College": "Stanford",
-    "Conference": "PAC-12",
-    "Draft": 8,
-    "Years": 3,
-    "Games": 38,
-    "Carries": 632,
-    "Rushing Yards": 3922,
-    "Yards Per Carry": 6.2,
-    "Yards Per Game": 103.2,
-    "Rushing TDs": 21,
-    "Receptions": 99,
-    "Recieving Yards": 1206,
-    "Yards Per Reception": 12.2,
-    "Recieving Yards Per Game": 31.7,
-    "Recieving TDs": 10,
-    "Plays": 731,
-    "Age": 27
+{
+  "Predictions": [
+    {
+      "Predicted TFP (Raw, Stage-1+2)": 29.66382598876953,
+      "Actual TFP": 175.9
+    },
+    {
+      "Predicted TFP (Raw, Stage-1+2)": 0.23226165771484375,
+      "Actual TFP": 0.2
+    },
+    {
+      "Predicted TFP (Raw, Stage-1+2)": 7.539377212524414,
+      "Actual TFP": 7.5
+    },
+    {
+      "Predicted TFP (Raw, Stage-1+2)": 1.9442081451416016,
+      "Actual TFP": 1.9
+    },
+    {
+      "Predicted TFP (Raw, Stage-1+2)": 39.86018371582031,
+      "Actual TFP": 4.2
+    },
+    {
+      "Predicted TFP (Raw, Stage-1+2)": 272.0302429199219,
+      "Actual TFP": 272.1
+    },
+    {
+      "Predicted TFP (Raw, Stage-1+2)": 32.57477569580078,
+      "Actual TFP": 32.6
+    },
+    {
+      "Predicted TFP (Raw, Stage-1+2)": 124.06089782714844,
+      "Actual TFP": 124.1
+    },
+    {
+      "Predicted TFP (Raw, Stage-1+2)": 299.852783203125,
+      "Actual TFP": 299.9
+    },
+    {
+      "Predicted TFP (Raw, Stage-1+2)": 133.96578979492188,
+      "Actual TFP": 134.0
+    },
+    {
+      "Predicted TFP (Raw, Stage-1+2)": 118.91487884521484,
+      "Actual TFP": 241.6
+    },
+    {
+      "Predicted TFP (Raw, Stage-1+2)": 181.12106323242188,
+      "Actual TFP": 181.2
+    },
+    {
+      "Predicted TFP (Raw, Stage-1+2)": 121.93380737304688,
+      "Actual TFP": 68.7
+    },
+    {
+      "Predicted TFP (Raw, Stage-1+2)": 29.11918067932129,
+      "Actual TFP": 29.1
+    },
+    {
+      "Predicted TFP (Raw, Stage-1+2)": 6.828550338745117,
+      "Actual TFP": 6.8
+    },
+    {
+      "Predicted TFP (Raw, Stage-1+2)": 0.0391693115234375,
+      "Actual TFP": 0.0
+    },
+    {
+      "Predicted TFP (Raw, Stage-1+2)": 113.57684326171875,
+      "Actual TFP": 113.6
+    },
+    {
+      "Predicted TFP (Raw, Stage-1+2)": 44.428585052490234,
+      "Actual TFP": 44.4
+    },
+    {
+      "Predicted TFP (Raw, Stage-1+2)": 44.23814392089844,
+      "Actual TFP": 26.7
+    },
+    {
+      "Predicted TFP (Raw, Stage-1+2)": 3.2118492126464844,
+      "Actual TFP": 3.1
+    },
+    {
+      "Predicted TFP (Raw, Stage-1+2)": 241.56431579589844,
+      "Actual TFP": 241.6
+    },
+    {
+      "Predicted TFP (Raw, Stage-1+2)": 157.91036987304688,
+      "Actual TFP": 157.9
+    },
+    {
+      "Predicted TFP (Raw, Stage-1+2)": 53.657562255859375,
+      "Actual TFP": 129.0
+    },
+    {
+      "Predicted TFP (Raw, Stage-1+2)": 85.22430419921875,
+      "Actual TFP": 85.2
+    },
+    {
+      "Predicted TFP (Raw, Stage-1+2)": 57.516754150390625,
+      "Actual TFP": 57.5
+    },
+    {
+      "Predicted TFP (Raw, Stage-1+2)": 20.99683380126953,
+      "Actual TFP": 21.0
+    },
+    {
+      "Predicted TFP (Raw, Stage-1+2)": 0.8056907653808594,
+      "Actual TFP": 0.7
+    },
+    {
+      "Predicted TFP (Raw, Stage-1+2)": 240.88075256347656,
+      "Actual TFP": 240.9
+    },
+    {
+      "Predicted TFP (Raw, Stage-1+2)": 127.01856231689453,
+      "Actual TFP": 127.1
+    },
+    {
+      "Predicted TFP (Raw, Stage-1+2)": 93.1643295288086,
+      "Actual TFP": 93.2
+    },
+    {
+      "Predicted TFP (Raw, Stage-1+2)": 58.15701675415039,
+      "Actual TFP": 81.4
+    },
+    {
+      "Predicted TFP (Raw, Stage-1+2)": 23.54594612121582,
+      "Actual TFP": 47.0
+    },
+    {
+      "Predicted TFP (Raw, Stage-1+2)": 32.847782135009766,
+      "Actual TFP": 32.8
+    },
+    {
+      "Predicted TFP (Raw, Stage-1+2)": 39.75334930419922,
+      "Actual TFP": 15.7
+    },
+    {
+      "Predicted TFP (Raw, Stage-1+2)": 4.949338912963867,
+      "Actual TFP": 4.9
+    },
+    {
+      "Predicted TFP (Raw, Stage-1+2)": 221.6102294921875,
+      "Actual TFP": 221.7
+    },
+    {
+      "Predicted TFP (Raw, Stage-1+2)": 48.650848388671875,
+      "Actual TFP": 48.7
+    },
+    {
+      "Predicted TFP (Raw, Stage-1+2)": 27.281404495239258,
+      "Actual TFP": 27.2
+    },
+    {
+      "Predicted TFP (Raw, Stage-1+2)": 23.962482452392578,
+      "Actual TFP": 23.9
+    },
+    {
+      "Predicted TFP (Raw, Stage-1+2)": 56.49039840698242,
+      "Actual TFP": 77.3
+    },
+    {
+      "Predicted TFP (Raw, Stage-1+2)": 29.23944091796875,
+      "Actual TFP": 29.3
+    },
+    {
+      "Predicted TFP (Raw, Stage-1+2)": 6.417131423950195,
+      "Actual TFP": 6.4
+    },
+    {
+      "Predicted TFP (Raw, Stage-1+2)": 4.113115310668945,
+      "Actual TFP": 4.0
+    },
+    {
+      "Predicted TFP (Raw, Stage-1+2)": -0.0077266693115234375,
+      "Actual TFP": 0.0
+    },
+    {
+      "Predicted TFP (Raw, Stage-1+2)": 116.42719268798828,
+      "Actual TFP": 0.0
+    },
+    {
+      "Predicted TFP (Raw, Stage-1+2)": 29.906200408935547,
+      "Actual TFP": 0.0
+    },
+    {
+      "Predicted TFP (Raw, Stage-1+2)": 244.38465881347656,
+      "Actual TFP": 244.4
+    },
+    {
+      "Predicted TFP (Raw, Stage-1+2)": 197.70294189453125,
+      "Actual TFP": 197.8
+    },
+    {
+      "Predicted TFP (Raw, Stage-1+2)": 6.021518707275391,
+      "Actual TFP": 5.9
+    },
+    {
+      "Predicted TFP (Raw, Stage-1+2)": 0.40196800231933594,
+      "Actual TFP": 0.3
+    },
+    {
+      "Predicted TFP (Raw, Stage-1+2)": 186.7551727294922,
+      "Actual TFP": 186.9
+    },
+    {
+      "Predicted TFP (Raw, Stage-1+2)": 137.35305786132812,
+      "Actual TFP": 137.4
+    },
+    {
+      "Predicted TFP (Raw, Stage-1+2)": 6.508003234863281,
+      "Actual TFP": 6.4
+    },
+    {
+      "Predicted TFP (Raw, Stage-1+2)": 0.0057926177978515625,
+      "Actual TFP": 0.0
+    },
+    {
+      "Predicted TFP (Raw, Stage-1+2)": 106.19615936279297,
+      "Actual TFP": 106.2
+    },
+    {
+      "Predicted TFP (Raw, Stage-1+2)": 61.615501403808594,
+      "Actual TFP": 96.0
+    },
+    {
+      "Predicted TFP (Raw, Stage-1+2)": 94.14781188964844,
+      "Actual TFP": 94.2
+    },
+    {
+      "Predicted TFP (Raw, Stage-1+2)": 10.026155471801758,
+      "Actual TFP": 10.0
+    },
+    {
+      "Predicted TFP (Raw, Stage-1+2)": 0.10208892822265625,
+      "Actual TFP": 0.0
+    },
+    {
+      "Predicted TFP (Raw, Stage-1+2)": 292.9653015136719,
+      "Actual TFP": 293.1
+    },
+    {
+      "Predicted TFP (Raw, Stage-1+2)": 191.82061767578125,
+      "Actual TFP": 191.8
+    },
+    {
+      "Predicted TFP (Raw, Stage-1+2)": 10.616371154785156,
+      "Actual TFP": 10.6
+    },
+    {
+      "Predicted TFP (Raw, Stage-1+2)": 3.2560367584228516,
+      "Actual TFP": 3.2
+    },
+    {
+      "Predicted TFP (Raw, Stage-1+2)": 2.14019775390625,
+      "Actual TFP": 2.2
+    },
+    {
+      "Predicted TFP (Raw, Stage-1+2)": -0.00337982177734375,
+      "Actual TFP": 0.0
+    },
+    {
+      "Predicted TFP (Raw, Stage-1+2)": 214.51954650878906,
+      "Actual TFP": 214.5
+    },
+    {
+      "Predicted TFP (Raw, Stage-1+2)": 24.874155044555664,
+      "Actual TFP": 115.0
+    },
+    {
+      "Predicted TFP (Raw, Stage-1+2)": 98.31053161621094,
+      "Actual TFP": 37.1
+    },
+    {
+      "Predicted TFP (Raw, Stage-1+2)": 155.36001586914062,
+      "Actual TFP": 155.4
+    },
+    {
+      "Predicted TFP (Raw, Stage-1+2)": 64.00941467285156,
+      "Actual TFP": 64.1
+    },
+    {
+      "Predicted TFP (Raw, Stage-1+2)": 56.9176139831543,
+      "Actual TFP": 56.9
+    },
+    {
+      "Predicted TFP (Raw, Stage-1+2)": 35.771854400634766,
+      "Actual TFP": 35.8
+    },
+    {
+      "Predicted TFP (Raw, Stage-1+2)": 81.8599853515625,
+      "Actual TFP": 81.9
+    },
+    {
+      "Predicted TFP (Raw, Stage-1+2)": 53.85160827636719,
+      "Actual TFP": 53.8
+    },
+    {
+      "Predicted TFP (Raw, Stage-1+2)": 31.511280059814453,
+      "Actual TFP": 31.5
+    },
+    {
+      "Predicted TFP (Raw, Stage-1+2)": 28.81062889099121,
+      "Actual TFP": 28.8
+    },
+    {
+      "Predicted TFP (Raw, Stage-1+2)": 40.03450393676758,
+      "Actual TFP": 0.0
+    },
+    {
+      "Predicted TFP (Raw, Stage-1+2)": 27.69183349609375,
+      "Actual TFP": 0.0
+    },
+    {
+      "Predicted TFP (Raw, Stage-1+2)": 62.099334716796875,
+      "Actual TFP": 91.7
+    },
+    {
+      "Predicted TFP (Raw, Stage-1+2)": 31.43504524230957,
+      "Actual TFP": 31.5
+    },
+    {
+      "Predicted TFP (Raw, Stage-1+2)": 0.5155448913574219,
+      "Actual TFP": 0.4
+    },
+    {
+      "Predicted TFP (Raw, Stage-1+2)": 77.25179290771484,
+      "Actual TFP": 77.4
+    },
+    {
+      "Predicted TFP (Raw, Stage-1+2)": 63.3123779296875,
+      "Actual TFP": 63.3
+    },
+    {
+      "Predicted TFP (Raw, Stage-1+2)": 17.267080307006836,
+      "Actual TFP": 17.3
+    },
+    {
+      "Predicted TFP (Raw, Stage-1+2)": 87.41822052001953,
+      "Actual TFP": 11.5
+    },
+    {
+      "Predicted TFP (Raw, Stage-1+2)": 32.71800994873047,
+      "Actual TFP": 32.7
+    },
+    {
+      "Predicted TFP (Raw, Stage-1+2)": 22.502342224121094,
+      "Actual TFP": 22.4
+    },
+    {
+      "Predicted TFP (Raw, Stage-1+2)": 1.9463996887207031,
+      "Actual TFP": 1.9
+    },
+    {
+      "Predicted TFP (Raw, Stage-1+2)": 0.01535797119140625,
+      "Actual TFP": 0.0
+    },
+    {
+      "Predicted TFP (Raw, Stage-1+2)": 254.8892059326172,
+      "Actual TFP": 255.0
+    },
+    {
+      "Predicted TFP (Raw, Stage-1+2)": 3.3272228240966797,
+      "Actual TFP": 3.3
+    },
+    {
+      "Predicted TFP (Raw, Stage-1+2)": 266.66217041015625,
+      "Actual TFP": 266.7
+    },
+    {
+      "Predicted TFP (Raw, Stage-1+2)": 43.55655288696289,
+      "Actual TFP": 43.5
+    },
+    {
+      "Predicted TFP (Raw, Stage-1+2)": 73.92063903808594,
+      "Actual TFP": 6.0
+    },
+    {
+      "Predicted TFP (Raw, Stage-1+2)": 0.07231521606445312,
+      "Actual TFP": 0.0
+    },
+    {
+      "Predicted TFP (Raw, Stage-1+2)": 54.66419982910156,
+      "Actual TFP": 54.7
+    },
+    {
+      "Predicted TFP (Raw, Stage-1+2)": 42.21794891357422,
+      "Actual TFP": 42.2
+    },
+    {
+      "Predicted TFP (Raw, Stage-1+2)": 37.84635543823242,
+      "Actual TFP": 0.2
+    },
+    {
+      "Predicted TFP (Raw, Stage-1+2)": 125.15086364746094,
+      "Actual TFP": 125.2
+    },
+    {
+      "Predicted TFP (Raw, Stage-1+2)": 28.378196716308594,
+      "Actual TFP": 28.4
+    },
+    {
+      "Predicted TFP (Raw, Stage-1+2)": 26.069751739501953,
+      "Actual TFP": 26.1
+    }
+  ],
+  "Top 5 Important Features (Stage-1)": {
+    "TD3": 0.04232143238186836,
+    "Weight_190 lbs": 0.03977380320429802,
+    "Y/A": 0.033118411898612976,
+    "Weight_223 lbs": 0.03214587643742561,
+    "Yds2": 0.03203063830733299
   },
-  {
-    "Predicted PPR Points": 274.49999999999994,
-    "Actual PPR Points": 377.8,
-    "Player": "Alvin Kamara",
-    "Repeats": 1,
-    "Best Year": 2020,
-    "Team": "NO",
-    "College": "Tennessee",
-    "Conference": "SEC",
-    "Draft": 67,
-    "Years": 2,
-    "Games": 24,
-    "Carries": 210,
-    "Rushing Yards": 1294,
-    "Yards Per Carry": 6.2,
-    "Yards Per Game": 53.9,
-    "Rushing TDs": 16,
-    "Receptions": 74,
-    "Recieving Yards": 683,
-    "Yards Per Reception": 9.2,
-    "Recieving Yards Per Game": 28.5,
-    "Recieving TDs": 7,
-    "Plays": 284,
-    "Age": 28
-  },
-  {
-    "Predicted PPR Points": 318.46666666666664,
-    "Actual PPR Points": 373.1,
-    "Player": "Jonathan Taylor",
-    "Repeats": 1,
-    "Best Year": 2021,
-    "Team": "IND",
-    "College": "Wisconsin",
-    "Conference": "BIG 10",
-    "Draft": 41,
-    "Years": 3,
-    "Games": 41,
-    "Carries": 926,
-    "Rushing Yards": 6174,
-    "Yards Per Carry": 6.7,
-    "Yards Per Game": 150.6,
-    "Rushing TDs": 50,
-    "Receptions": 42,
-    "Recieving Yards": 407,
-    "Yards Per Reception": 9.7,
-    "Recieving Yards Per Game": 9.9,
-    "Recieving TDs": 5,
-    "Plays": 968,
-    "Age": 25
-  },
-  {
-    "Predicted PPR Points": 348.1,
-    "Actual PPR Points": 362.9,
-    "Player": "Jahmyr Gibbs",
-    "Repeats": 1,
-    "Best Year": 2024,
-    "Team": "DET",
-    "College": "Gerogia Tech, Alabama",
-    "Conference": "ACC, SEC",
-    "Draft": 12,
-    "Years": 3,
-    "Games": 31,
-    "Carries": 383,
-    "Rushing Yards": 2132,
-    "Yards Per Carry": 5.6,
-    "Yards Per Game": 68.8,
-    "Rushing TDs": 15,
-    "Receptions": 104,
-    "Recieving Yards": 1217,
-    "Yards Per Reception": 11.7,
-    "Recieving Yards Per Game": 39.3,
-    "Recieving TDs": 8,
-    "Plays": 487,
-    "Age": 22
-  },
-  {
-    "Predicted PPR Points": 348.1,
-    "Actual PPR Points": 355.3,
-    "Player": "Saquon Barkley",
-    "Repeats": 2,
-    "Best Year": 2024,
-    "Team": "PHI",
-    "College": "Penn St.",
-    "Conference": "BIG 10",
-    "Draft": 2,
-    "Years": 3,
-    "Games": 38,
-    "Carries": 671,
-    "Rushing Yards": 3843,
-    "Yards Per Carry": 5.7,
-    "Yards Per Game": 101.1,
-    "Rushing TDs": 43,
-    "Receptions": 102,
-    "Recieving Yards": 1195,
-    "Yards Per Reception": 11.7,
-    "Recieving Yards Per Game": 31.4,
-    "Recieving TDs": 8,
-    "Plays": 773,
-    "Age": 27
-  },
-  {
-    "Predicted PPR Points": 348.1,
-    "Actual PPR Points": 341.7,
-    "Player": "Bijan Robinson",
-    "Repeats": 1,
-    "Best Year": 2024,
-    "Team": "ATL",
-    "College": "Texas",
-    "Conference": "BIG 12",
-    "Draft": 8,
-    "Years": 3,
-    "Games": 31,
-    "Carries": 539,
-    "Rushing Yards": 3410,
-    "Yards Per Carry": 6.3,
-    "Yards Per Game": 110.0,
-    "Rushing TDs": 33,
-    "Receptions": 60,
-    "Recieving Yards": 805,
-    "Yards Per Reception": 13.4,
-    "Recieving Yards Per Game": 26.0,
-    "Recieving TDs": 8,
-    "Plays": 599,
-    "Age": 21
-  },
-  {
-    "Predicted PPR Points": 348.1,
-    "Actual PPR Points": 337.8,
-    "Player": "Dalvin Cook",
-    "Repeats": 1,
-    "Best Year": 2020,
-    "Team": "MIN",
-    "College": "Florida St.",
-    "Conference": "ACC",
-    "Draft": 41,
-    "Years": 3,
-    "Games": 38,
-    "Carries": 687,
-    "Rushing Yards": 4464,
-    "Yards Per Carry": 6.5,
-    "Yards Per Game": 117.5,
-    "Rushing TDs": 46,
-    "Receptions": 79,
-    "Recieving Yards": 935,
-    "Yards Per Reception": 11.8,
-    "Recieving Yards Per Game": 24.6,
-    "Recieving TDs": 2,
-    "Plays": 766,
-    "Age": 29
-  },
-  {
-    "Predicted PPR Points": 348.1,
-    "Actual PPR Points": 336.4,
-    "Player": "Derrick Henry",
-    "Repeats": 3,
-    "Best Year": 2024,
-    "Team": "BAL",
-    "College": "Alabama",
-    "Conference": "SEC",
-    "Draft": 45,
-    "Years": 3,
-    "Games": 39,
-    "Carries": 602,
-    "Rushing Yards": 3591,
-    "Yards Per Carry": 6.0,
-    "Yards Per Game": 92.1,
-    "Rushing TDs": 42,
-    "Receptions": 17,
-    "Recieving Yards": 285,
-    "Yards Per Reception": 16.8,
-    "Recieving Yards Per Game": 7.3,
-    "Recieving TDs": 3,
-    "Plays": 619,
-    "Age": 30
-  },
-  {
-    "Predicted PPR Points": 274.49999999999994,
-    "Actual PPR Points": 328.3,
-    "Player": "Josh Jacobs",
-    "Repeats": 2,
-    "Best Year": 2022,
-    "Team": "LV",
-    "College": "Alabama",
-    "Conference": "SEC",
-    "Draft": 24,
-    "Years": 3,
-    "Games": 42,
-    "Carries": 251,
-    "Rushing Yards": 1491,
-    "Yards Per Carry": 5.9,
-    "Yards Per Game": 35.5,
-    "Rushing TDs": 16,
-    "Receptions": 48,
-    "Recieving Yards": 571,
-    "Yards Per Reception": 11.9,
-    "Recieving Yards Per Game": 13.6,
-    "Recieving TDs": 5,
-    "Plays": 299,
-    "Age": 26
-  },
-  {
-    "Predicted PPR Points": 286.175,
-    "Actual PPR Points": 300.7,
-    "Player": "Najee Harris",
-    "Repeats": 1,
-    "Best Year": 2021,
-    "Team": "PIT",
-    "College": "Alabama",
-    "Conference": "SEC",
-    "Draft": 24,
-    "Years": 4,
-    "Games": 55,
-    "Carries": 638,
-    "Rushing Yards": 3843,
-    "Yards Per Carry": 6.0,
-    "Yards Per Game": 69.9,
-    "Rushing TDs": 46,
-    "Receptions": 80,
-    "Recieving Yards": 781,
-    "Yards Per Reception": 9.8,
-    "Recieving Yards Per Game": 14.2,
-    "Recieving TDs": 11,
-    "Plays": 718,
-    "Age": 26
-  },
-  {
-    "Predicted PPR Points": 318.46666666666664,
-    "Actual PPR Points": 299.9,
-    "Player": "De'Von Achane",
-    "Repeats": 1,
-    "Best Year": 2024,
-    "Team": "MIA",
-    "College": "Texas A&M",
-    "Conference": "SEC",
-    "Draft": 84,
-    "Years": 3,
-    "Games": 30,
-    "Carries": 369,
-    "Rushing Yards": 2376,
-    "Yards Per Carry": 6.4,
-    "Yards Per Game": 79.2,
-    "Rushing TDs": 21,
-    "Receptions": 65,
-    "Recieving Yards": 554,
-    "Yards Per Reception": 8.5,
-    "Recieving Yards Per Game": 18.5,
-    "Recieving TDs": 5,
-    "Plays": 434,
-    "Age": 22
-  },
-  {
-    "Predicted PPR Points": 286.175,
-    "Actual PPR Points": 290.5,
-    "Player": "Breece Hall",
-    "Repeats": 1,
-    "Best Year": 2023,
-    "Team": "NYJ",
-    "College": "Iowa St.",
-    "Conference": "BIG 12",
-    "Draft": 36,
-    "Years": 3,
-    "Games": 36,
-    "Carries": 718,
-    "Rushing Yards": 3933,
-    "Yards Per Carry": 5.5,
-    "Yards Per Game": 109.3,
-    "Rushing TDs": 50,
-    "Receptions": 82,
-    "Recieving Yards": 734,
-    "Yards Per Reception": 9.0,
-    "Recieving Yards Per Game": 20.4,
-    "Recieving TDs": 6,
-    "Plays": 800,
-    "Age": 23
-  },
-  {
-    "Predicted PPR Points": 274.49999999999994,
-    "Actual PPR Points": 287.9,
-    "Player": "Joe Mixon",
-    "Repeats": 1,
-    "Best Year": 2021,
-    "Team": "CIN",
-    "College": "Oklahoma",
-    "Conference": "BIG 12",
-    "Draft": 48,
-    "Years": 2,
-    "Games": 25,
-    "Carries": 300,
-    "Rushing Yards": 2027,
-    "Yards Per Carry": 6.8,
-    "Yards Per Game": 81.1,
-    "Rushing TDs": 17,
-    "Receptions": 65,
-    "Recieving Yards": 894,
-    "Yards Per Reception": 13.8,
-    "Recieving Yards Per Game": 35.8,
-    "Recieving TDs": 9,
-    "Plays": 365,
-    "Age": 27
-  },
-  {
-    "Predicted PPR Points": 318.46666666666664,
-    "Actual PPR Points": 282.4,
-    "Player": "Travis Etienne Jr.",
-    "Repeats": 1,
-    "Best Year": 2023,
-    "Team": "JAX",
-    "College": "Clemson",
-    "Conference": "ACC",
-    "Draft": 25,
-    "Years": 4,
-    "Games": 55,
-    "Carries": 686,
-    "Rushing Yards": 4952,
-    "Yards Per Carry": 7.2,
-    "Yards Per Game": 90.0,
-    "Rushing TDs": 70,
-    "Receptions": 102,
-    "Recieving Yards": 1155,
-    "Yards Per Reception": 11.3,
-    "Recieving Yards Per Game": 21.0,
-    "Recieving TDs": 8,
-    "Plays": 788,
-    "Age": 25
-  },
-  {
-    "Predicted PPR Points": 286.175,
-    "Actual PPR Points": 281.4,
-    "Player": "Nick Chubb",
-    "Repeats": 1,
-    "Best Year": 2022,
-    "Team": "CLE",
-    "College": "Georgia",
-    "Conference": "SEC",
-    "Draft": 35,
-    "Years": 4,
-    "Games": 47,
-    "Carries": 758,
-    "Rushing Yards": 4769,
-    "Yards Per Carry": 6.3,
-    "Yards Per Game": 101.5,
-    "Rushing TDs": 44,
-    "Receptions": 31,
-    "Recieving Yards": 361,
-    "Yards Per Reception": 11.6,
-    "Recieving Yards Per Game": 7.7,
-    "Recieving TDs": 4,
-    "Plays": 789,
-    "Age": 28
-  },
-  {
-    "Predicted PPR Points": 286.175,
-    "Actual PPR Points": 272.1,
-    "Player": "Kyren Williams",
-    "Repeats": 1,
-    "Best Year": 2024,
-    "Team": "LAR",
-    "College": "Notre Dame",
-    "Conference": "Ind/ACC",
-    "Draft": 164,
-    "Years": 3,
-    "Games": 28,
-    "Carries": 419,
-    "Rushing Yards": 2153,
-    "Yards Per Carry": 5.1,
-    "Yards Per Game": 76.9,
-    "Rushing TDs": 27,
-    "Receptions": 78,
-    "Recieving Yards": 675,
-    "Yards Per Reception": 8.7,
-    "Recieving Yards Per Game": 24.1,
-    "Recieving TDs": 4,
-    "Plays": 497,
-    "Age": 23
-  },
-  {
-    "Predicted PPR Points": 274.49999999999994,
-    "Actual PPR Points": 267.9,
-    "Player": "Rachaad White",
-    "Repeats": 1,
-    "Best Year": 2023,
-    "Team": "TB",
-    "College": "Arizona St.",
-    "Conference": "PAC-12",
-    "Draft": 91,
-    "Years": 2,
-    "Games": 15,
-    "Carries": 224,
-    "Rushing Yards": 1426,
-    "Yards Per Carry": 6.4,
-    "Yards Per Game": 95.1,
-    "Rushing TDs": 20,
-    "Receptions": 51,
-    "Recieving Yards": 607,
-    "Yards Per Reception": 11.9,
-    "Recieving Yards Per Game": 40.5,
-    "Recieving TDs": 2,
-    "Plays": 275,
-    "Age": 25
-  },
-  {
-    "Predicted PPR Points": 274.49999999999994,
-    "Actual PPR Points": 267.7,
-    "Player": "Raheem Mostert",
-    "Repeats": 1,
-    "Best Year": 2023,
-    "Team": "MIA",
-    "College": "Purdue",
-    "Conference": "BIG 10",
-    "Draft": 0,
-    "Years": 4,
-    "Games": 44,
-    "Carries": 136,
-    "Rushing Yards": 759,
-    "Yards Per Carry": 5.6,
-    "Yards Per Game": 17.3,
-    "Rushing TDs": 6,
-    "Receptions": 19,
-    "Recieving Yards": 122,
-    "Yards Per Reception": 6.4,
-    "Recieving Yards Per Game": 2.8,
-    "Recieving TDs": 0,
-    "Plays": 155,
-    "Age": 31
-  },
-  {
-    "Model Statistics": {
-      "Mean Squared Error (MSE)": 3868.1325000000056,
-      "Root Mean Squared Error (RMSE)": 62.194312440929885,
-      "Mean Absolute Error (MAE)": 51.67500000000004,
-      "Median Absolute Error (Median AE)": 48.50000000000003,
-      "R^2 Score": -4.8694609381446,
-      "Explained Variance": -1.3038618493365726,
-      "Max Error": 103.30000000000007,
-      "Mean Squared Log Error (MSLE)": 0.036791407350110515,
-      "Poisson Deviance": 12.483911803368812,
-      "Gamma Deviance": 0.04060584429287539,
-      "Average Error (ME)": 48.47500000000002
+  "Model Statistics": {
+    "Mean Squared Error (MSE)": 4341.397373953092,
+    "Root Mean Squared Error (RMSE)": 65.88928117647886,
+    "Mean Absolute Error (MAE)": 54.910587710425965,
+    "Median Absolute Error (Median AE)": 37.64635543823242,
+    "R^2 Score": -0.0431801917039778,
+    "Explained Variance": -0.04293160570682497,
+    "Max Error": 146.23617401123047,
+    "Mean Squared Log Error (MSLE)": 4.532220812800976,
+    "Poisson Deviance": 76.65134781826846,
+    "Average Error (ME)": 1.0171229044596368,
+    "MAPE": 13.158783259484267,
+    "MedAPE": 0.7748734697677856,
+    "Average Accuracy (1 - MAPE)": -12.158783259484267,
+    "Median Accuracy (1 - MedAPE)": 0.2251265302322144,
+    "Top 5 Important Features (Stage-1)": {
+      "TD3": 0.04232143238186836,
+      "Weight_190 lbs": 0.03977380320429802,
+      "Y/A": 0.033118411898612976,
+      "Weight_223 lbs": 0.03214587643742561,
+      "Yds2": 0.03203063830733299
     }
   }
-]
+}
