@@ -25,7 +25,7 @@ from xgboost import XGBRegressor
 
 
 
-df = pd.read_csv("Data/NFLCollegeStats.csv")
+df = pd.read_csv("Data/NFLCollegeStatsCSV.csv")
 label_column = "TFP"
 
 
