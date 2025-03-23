@@ -1,7 +1,6 @@
 [
   {
     "Predicted TFP (Raw, Stage-1+2)": 29.66382598876953,
-    "Predicted TFP (Corrected)": 14.323351860046387,
     "Actual TFP": 175.9,
     "Height": "6'",
     "Weight": "227 lbs",
@@ -25,7 +24,6 @@
   },
   {
     "Predicted TFP (Raw, Stage-1+2)": 0.23226165771484375,
-    "Predicted TFP (Corrected)": 9.999999717180685e-10,
     "Actual TFP": 0.2,
     "Height": "5' 11\"",
     "Weight": "212 lbs",
@@ -49,7 +47,6 @@
   },
   {
     "Predicted TFP (Raw, Stage-1+2)": 7.539377212524414,
-    "Predicted TFP (Corrected)": 3.261127233505249,
     "Actual TFP": 7.5,
     "Height": "6'",
     "Weight": "207 lbs",
@@ -73,7 +70,6 @@
   },
   {
     "Predicted TFP (Raw, Stage-1+2)": 1.9442081451416016,
-    "Predicted TFP (Corrected)": 0.463542640209198,
     "Actual TFP": 1.9,
     "Height": "5' 9\"",
     "Weight": "214 lbs",
@@ -97,7 +93,6 @@
   },
   {
     "Predicted TFP (Raw, Stage-1+2)": 39.86018371582031,
-    "Predicted TFP (Corrected)": 19.42152976989746,
     "Actual TFP": 4.2,
     "Height": "5' 10\"",
     "Weight": "215 lbs",
@@ -121,7 +116,6 @@
   },
   {
     "Predicted TFP (Raw, Stage-1+2)": 272.0302429199219,
-    "Predicted TFP (Corrected)": 271.01312255859375,
     "Actual TFP": 272.1,
     "Height": "5' 9\"",
     "Weight": "202 lbs",
@@ -145,7 +139,6 @@
   },
   {
     "Predicted TFP (Raw, Stage-1+2)": 32.57477569580078,
-    "Predicted TFP (Corrected)": 15.778826713562012,
     "Actual TFP": 32.6,
     "Height": "6'",
     "Weight": "235 lbs",
@@ -169,7 +162,6 @@
   },
   {
     "Predicted TFP (Raw, Stage-1+2)": 124.06089782714844,
-    "Predicted TFP (Corrected)": 123.04377746582031,
     "Actual TFP": 124.1,
     "Height": "5' 8\"",
     "Weight": "215 lbs",
@@ -193,7 +185,6 @@
   },
   {
     "Predicted TFP (Raw, Stage-1+2)": 299.852783203125,
-    "Predicted TFP (Corrected)": 298.8356628417969,
     "Actual TFP": 299.9,
     "Height": "5' 9\"",
     "Weight": "188 lbs",
@@ -217,7 +208,6 @@
   },
   {
     "Predicted TFP (Raw, Stage-1+2)": 133.96578979492188,
-    "Predicted TFP (Corrected)": 132.94866943359375,
     "Actual TFP": 134.0,
     "Height": "5' 10\"",
     "Weight": "210 lbs",
@@ -241,7 +231,6 @@
   },
   {
     "Predicted TFP (Raw, Stage-1+2)": 118.91487884521484,
-    "Predicted TFP (Corrected)": 117.89775848388672,
     "Actual TFP": 241.6,
     "Height": "6' 1\"",
     "Weight": "210 lbs",
@@ -265,7 +254,6 @@
   },
   {
     "Predicted TFP (Raw, Stage-1+2)": 181.12106323242188,
-    "Predicted TFP (Corrected)": 180.10394287109375,
     "Actual TFP": 181.2,
     "Height": "5' 9\"",
     "Weight": "211 lbs",
@@ -289,7 +277,6 @@
   },
   {
     "Predicted TFP (Raw, Stage-1+2)": 121.93380737304688,
-    "Predicted TFP (Corrected)": 120.91668701171875,
     "Actual TFP": 68.7,
     "Height": "5' 10\"",
     "Weight": "205 lbs",
@@ -313,7 +300,6 @@
   },
   {
     "Predicted TFP (Raw, Stage-1+2)": 29.11918067932129,
-    "Predicted TFP (Corrected)": 14.051029205322266,
     "Actual TFP": 29.1,
     "Height": "6'",
     "Weight": "220 lbs",
@@ -337,7 +323,6 @@
   },
   {
     "Predicted TFP (Raw, Stage-1+2)": 6.828550338745117,
-    "Predicted TFP (Corrected)": 2.9057137966156006,
     "Actual TFP": 6.8,
     "Height": "5' 8\"",
     "Weight": "191 lbs",
@@ -361,7 +346,6 @@
   },
   {
     "Predicted TFP (Raw, Stage-1+2)": 0.0391693115234375,
-    "Predicted TFP (Corrected)": 9.999999717180685e-10,
     "Actual TFP": 0.0,
     "Height": "5' 10\"",
     "Weight": "205 lbs",
@@ -385,7 +369,6 @@
   },
   {
     "Predicted TFP (Raw, Stage-1+2)": 113.57684326171875,
-    "Predicted TFP (Corrected)": 112.55972290039062,
     "Actual TFP": 113.6,
     "Height": "5' 11\"",
     "Weight": "195 lbs",
@@ -409,7 +392,6 @@
   },
   {
     "Predicted TFP (Raw, Stage-1+2)": 44.428585052490234,
-    "Predicted TFP (Corrected)": 21.705730438232422,
     "Actual TFP": 44.4,
     "Height": "5' 9\"",
     "Weight": "197 lbs",
@@ -433,7 +415,6 @@
   },
   {
     "Predicted TFP (Raw, Stage-1+2)": 44.23814392089844,
-    "Predicted TFP (Corrected)": 21.610509872436523,
     "Actual TFP": 26.7,
     "Height": "5' 10\"",
     "Weight": "210 lbs",
@@ -457,7 +438,6 @@
   },
   {
     "Predicted TFP (Raw, Stage-1+2)": 3.2118492126464844,
-    "Predicted TFP (Corrected)": 1.0973632335662842,
     "Actual TFP": 3.1,
     "Height": "5' 11\"",
     "Weight": "212 lbs",
@@ -481,7 +461,6 @@
   },
   {
     "Predicted TFP (Raw, Stage-1+2)": 241.56431579589844,
-    "Predicted TFP (Corrected)": 240.5471954345703,
     "Actual TFP": 241.6,
     "Height": "5' 10\"",
     "Weight": "195 lbs",
@@ -505,7 +484,6 @@
   },
   {
     "Predicted TFP (Raw, Stage-1+2)": 157.91036987304688,
-    "Predicted TFP (Corrected)": 156.89324951171875,
     "Actual TFP": 157.9,
     "Height": "5' 10\"",
     "Weight": "220 lbs",
@@ -529,7 +507,6 @@
   },
   {
     "Predicted TFP (Raw, Stage-1+2)": 53.657562255859375,
-    "Predicted TFP (Corrected)": 52.640438079833984,
     "Actual TFP": 129.0,
     "Height": "5' 11\"",
     "Weight": "215 lbs",
@@ -553,7 +530,6 @@
   },
   {
     "Predicted TFP (Raw, Stage-1+2)": 85.22430419921875,
-    "Predicted TFP (Corrected)": 84.20718383789062,
     "Actual TFP": 85.2,
     "Height": "6' 1\"",
     "Weight": "235 lbs",
@@ -577,7 +553,6 @@
   },
   {
     "Predicted TFP (Raw, Stage-1+2)": 57.516754150390625,
-    "Predicted TFP (Corrected)": 56.499629974365234,
     "Actual TFP": 57.5,
     "Height": "6'",
     "Weight": "225 lbs",
@@ -601,7 +576,6 @@
   },
   {
     "Predicted TFP (Raw, Stage-1+2)": 20.99683380126953,
-    "Predicted TFP (Corrected)": 9.989855766296387,
     "Actual TFP": 21.0,
     "Height": "5' 10\"",
     "Weight": "214 lbs",
@@ -625,7 +599,6 @@
   },
   {
     "Predicted TFP (Raw, Stage-1+2)": 0.8056907653808594,
-    "Predicted TFP (Corrected)": 9.999999717180685e-10,
     "Actual TFP": 0.7,
     "Height": "6' 1\"",
     "Weight": "219 lbs",
@@ -649,7 +622,6 @@
   },
   {
     "Predicted TFP (Raw, Stage-1+2)": 240.88075256347656,
-    "Predicted TFP (Corrected)": 239.86363220214844,
     "Actual TFP": 240.9,
     "Height": "5' 11\"",
     "Weight": "217 lbs",
@@ -673,7 +645,6 @@
   },
   {
     "Predicted TFP (Raw, Stage-1+2)": 127.01856231689453,
-    "Predicted TFP (Corrected)": 126.0014419555664,
     "Actual TFP": 127.1,
     "Height": "5' 10\"",
     "Weight": "195 lbs",
@@ -697,7 +668,6 @@
   },
   {
     "Predicted TFP (Raw, Stage-1+2)": 93.1643295288086,
-    "Predicted TFP (Corrected)": 92.14720916748047,
     "Actual TFP": 93.2,
     "Height": "5' 10\"",
     "Weight": "217 lbs",
@@ -721,7 +691,6 @@
   },
   {
     "Predicted TFP (Raw, Stage-1+2)": 58.15701675415039,
-    "Predicted TFP (Corrected)": 57.139892578125,
     "Actual TFP": 81.4,
     "Height": "5' 11\"",
     "Weight": "240 lbs",
@@ -745,7 +714,6 @@
   },
   {
     "Predicted TFP (Raw, Stage-1+2)": 23.54594612121582,
-    "Predicted TFP (Corrected)": 11.264411926269531,
     "Actual TFP": 47.0,
     "Height": "6' 1\"",
     "Weight": "223 lbs",
@@ -769,7 +737,6 @@
   },
   {
     "Predicted TFP (Raw, Stage-1+2)": 32.847782135009766,
-    "Predicted TFP (Corrected)": 15.915329933166504,
     "Actual TFP": 32.8,
     "Height": "6' 2\"",
     "Weight": "228 lbs",
@@ -793,7 +760,6 @@
   },
   {
     "Predicted TFP (Raw, Stage-1+2)": 39.75334930419922,
-    "Predicted TFP (Corrected)": 19.368112564086914,
     "Actual TFP": 15.7,
     "Height": "5' 11\"",
     "Weight": "209 lbs",
@@ -817,7 +783,6 @@
   },
   {
     "Predicted TFP (Raw, Stage-1+2)": 4.949338912963867,
-    "Predicted TFP (Corrected)": 1.9661080837249756,
     "Actual TFP": 4.9,
     "Height": "6' 1\"",
     "Weight": "225 lbs",
@@ -841,7 +806,6 @@
   },
   {
     "Predicted TFP (Raw, Stage-1+2)": 221.6102294921875,
-    "Predicted TFP (Corrected)": 220.59310913085938,
     "Actual TFP": 221.7,
     "Height": "5' 11\"",
     "Weight": "230 lbs",
@@ -865,7 +829,6 @@
   },
   {
     "Predicted TFP (Raw, Stage-1+2)": 48.650848388671875,
-    "Predicted TFP (Corrected)": 23.816862106323242,
     "Actual TFP": 48.7,
     "Height": "5' 11\"",
     "Weight": "227 lbs",
@@ -889,7 +852,6 @@
   },
   {
     "Predicted TFP (Raw, Stage-1+2)": 27.281404495239258,
-    "Predicted TFP (Corrected)": 13.13214111328125,
     "Actual TFP": 27.2,
     "Height": "5' 9\"",
     "Weight": "205 lbs",
@@ -913,7 +875,6 @@
   },
   {
     "Predicted TFP (Raw, Stage-1+2)": 23.962482452392578,
-    "Predicted TFP (Corrected)": 11.47268009185791,
     "Actual TFP": 23.9,
     "Height": "6'",
     "Weight": "228 lbs",
@@ -937,7 +898,6 @@
   },
   {
     "Predicted TFP (Raw, Stage-1+2)": 56.49039840698242,
-    "Predicted TFP (Corrected)": 55.47327423095703,
     "Actual TFP": 77.3,
     "Height": "5' 11\"",
     "Weight": "211 lbs",
@@ -961,7 +921,6 @@
   },
   {
     "Predicted TFP (Raw, Stage-1+2)": 29.23944091796875,
-    "Predicted TFP (Corrected)": 14.111159324645996,
     "Actual TFP": 29.3,
     "Height": "6'",
     "Weight": "215 lbs",
@@ -985,7 +944,6 @@
   },
   {
     "Predicted TFP (Raw, Stage-1+2)": 6.417131423950195,
-    "Predicted TFP (Corrected)": 2.7000043392181396,
     "Actual TFP": 6.4,
     "Height": "5' 10\"",
     "Weight": "202 lbs",
@@ -1009,7 +967,6 @@
   },
   {
     "Predicted TFP (Raw, Stage-1+2)": 4.113115310668945,
-    "Predicted TFP (Corrected)": 1.5479962825775146,
     "Actual TFP": 4.0,
     "Height": "5' 10\"",
     "Weight": "210 lbs",
@@ -1033,7 +990,6 @@
   },
   {
     "Predicted TFP (Raw, Stage-1+2)": -0.0077266693115234375,
-    "Predicted TFP (Corrected)": 9.999999717180685e-10,
     "Actual TFP": 0.0,
     "Height": "5' 9\"",
     "Weight": "196 lbs",
@@ -1057,7 +1013,6 @@
   },
   {
     "Predicted TFP (Raw, Stage-1+2)": 116.42719268798828,
-    "Predicted TFP (Corrected)": 115.41007232666016,
     "Actual TFP": 0.0,
     "Height": "5' 8\"",
     "Weight": "210 lbs",
@@ -1081,7 +1036,6 @@
   },
   {
     "Predicted TFP (Raw, Stage-1+2)": 29.906200408935547,
-    "Predicted TFP (Corrected)": 14.444539070129395,
     "Actual TFP": 0.0,
     "Height": "5' 10\"",
     "Weight": "209 lbs",
@@ -1105,7 +1059,6 @@
   },
   {
     "Predicted TFP (Raw, Stage-1+2)": 244.38465881347656,
-    "Predicted TFP (Corrected)": 243.36753845214844,
     "Actual TFP": 244.4,
     "Height": "5' 10\"",
     "Weight": "195 lbs",
@@ -1129,7 +1082,6 @@
   },
   {
     "Predicted TFP (Raw, Stage-1+2)": 197.70294189453125,
-    "Predicted TFP (Corrected)": 196.68582153320312,
     "Actual TFP": 197.8,
     "Height": "5' 11\"",
     "Weight": "215 lbs",
@@ -1153,7 +1105,6 @@
   },
   {
     "Predicted TFP (Raw, Stage-1+2)": 6.021518707275391,
-    "Predicted TFP (Corrected)": 2.5021979808807373,
     "Actual TFP": 5.9,
     "Height": "5' 10\"",
     "Weight": "206 lbs",
@@ -1177,7 +1128,6 @@
   },
   {
     "Predicted TFP (Raw, Stage-1+2)": 0.40196800231933594,
-    "Predicted TFP (Corrected)": 9.999999717180685e-10,
     "Actual TFP": 0.3,
     "Height": "5' 10\"",
     "Weight": "203 lbs",
@@ -1201,7 +1151,6 @@
   },
   {
     "Predicted TFP (Raw, Stage-1+2)": 186.7551727294922,
-    "Predicted TFP (Corrected)": 185.73805236816406,
     "Actual TFP": 186.9,
     "Height": "6' 1\"",
     "Weight": "214 lbs",
@@ -1225,7 +1174,6 @@
   },
   {
     "Predicted TFP (Raw, Stage-1+2)": 137.35305786132812,
-    "Predicted TFP (Corrected)": 136.3359375,
     "Actual TFP": 137.4,
     "Height": "5' 11\"",
     "Weight": "220 lbs",
@@ -1249,7 +1197,6 @@
   },
   {
     "Predicted TFP (Raw, Stage-1+2)": 6.508003234863281,
-    "Predicted TFP (Corrected)": 2.7454402446746826,
     "Actual TFP": 6.4,
     "Height": "5' 6\"",
     "Weight": "185 lbs",
@@ -1273,7 +1220,6 @@
   },
   {
     "Predicted TFP (Raw, Stage-1+2)": 0.0057926177978515625,
-    "Predicted TFP (Corrected)": 9.999999717180685e-10,
     "Actual TFP": 0.0,
     "Height": "6' 1\"",
     "Weight": "218 lbs",
@@ -1297,7 +1243,6 @@
   },
   {
     "Predicted TFP (Raw, Stage-1+2)": 106.19615936279297,
-    "Predicted TFP (Corrected)": 105.17903900146484,
     "Actual TFP": 106.2,
     "Height": "5' 11\"",
     "Weight": "225 lbs",
@@ -1321,7 +1266,6 @@
   },
   {
     "Predicted TFP (Raw, Stage-1+2)": 61.615501403808594,
-    "Predicted TFP (Corrected)": 60.5983772277832,
     "Actual TFP": 96.0,
     "Height": "5' 10\"",
     "Weight": "226 lbs",
@@ -1345,7 +1289,6 @@
   },
   {
     "Predicted TFP (Raw, Stage-1+2)": 94.14781188964844,
-    "Predicted TFP (Corrected)": 93.13069152832031,
     "Actual TFP": 94.2,
     "Height": "6'",
     "Weight": "221 lbs",
@@ -1369,7 +1312,6 @@
   },
   {
     "Predicted TFP (Raw, Stage-1+2)": 10.026155471801758,
-    "Predicted TFP (Corrected)": 4.504516124725342,
     "Actual TFP": 10.0,
     "Height": "5' 8\"",
     "Weight": "209 lbs",
@@ -1393,7 +1335,6 @@
   },
   {
     "Predicted TFP (Raw, Stage-1+2)": 0.10208892822265625,
-    "Predicted TFP (Corrected)": 9.999999717180685e-10,
     "Actual TFP": 0.0,
     "Height": "6' 1\"",
     "Weight": "230 lbs",
@@ -1417,7 +1358,6 @@
   },
   {
     "Predicted TFP (Raw, Stage-1+2)": 292.9653015136719,
-    "Predicted TFP (Corrected)": 291.94818115234375,
     "Actual TFP": 293.1,
     "Height": "5' 10\"",
     "Weight": "223 lbs",
@@ -1441,7 +1381,6 @@
   },
   {
     "Predicted TFP (Raw, Stage-1+2)": 191.82061767578125,
-    "Predicted TFP (Corrected)": 190.80349731445312,
     "Actual TFP": 191.8,
     "Height": "5' 10\"",
     "Weight": "215 lbs",
@@ -1465,7 +1404,6 @@
   },
   {
     "Predicted TFP (Raw, Stage-1+2)": 10.616371154785156,
-    "Predicted TFP (Corrected)": 4.799623966217041,
     "Actual TFP": 10.6,
     "Height": "6'",
     "Weight": "205 lbs",
@@ -1489,7 +1427,6 @@
   },
   {
     "Predicted TFP (Raw, Stage-1+2)": 3.2560367584228516,
-    "Predicted TFP (Corrected)": 1.1194570064544678,
     "Actual TFP": 3.2,
     "Height": "5' 11\"",
     "Weight": "215 lbs",
@@ -1513,7 +1450,6 @@
   },
   {
     "Predicted TFP (Raw, Stage-1+2)": 2.14019775390625,
-    "Predicted TFP (Corrected)": 0.5615374445915222,
     "Actual TFP": 2.2,
     "Height": "6'",
     "Weight": "202 lbs",
@@ -1537,7 +1473,6 @@
   },
   {
     "Predicted TFP (Raw, Stage-1+2)": -0.00337982177734375,
-    "Predicted TFP (Corrected)": 9.999999717180685e-10,
     "Actual TFP": 0.0,
     "Height": "6'",
     "Weight": "220 lbs",
@@ -1561,7 +1496,6 @@
   },
   {
     "Predicted TFP (Raw, Stage-1+2)": 214.51954650878906,
-    "Predicted TFP (Corrected)": 213.50242614746094,
     "Actual TFP": 214.5,
     "Height": "5' 9\"",
     "Weight": "215 lbs",
@@ -1585,7 +1519,6 @@
   },
   {
     "Predicted TFP (Raw, Stage-1+2)": 24.874155044555664,
-    "Predicted TFP (Corrected)": 11.928516387939453,
     "Actual TFP": 115.0,
     "Height": "5' 11\"",
     "Weight": "223 lbs",
@@ -1609,7 +1542,6 @@
   },
   {
     "Predicted TFP (Raw, Stage-1+2)": 98.31053161621094,
-    "Predicted TFP (Corrected)": 97.29341125488281,
     "Actual TFP": 37.1,
     "Height": "6'",
     "Weight": "224 lbs",
@@ -1633,7 +1565,6 @@
   },
   {
     "Predicted TFP (Raw, Stage-1+2)": 155.36001586914062,
-    "Predicted TFP (Corrected)": 154.3428955078125,
     "Actual TFP": 155.4,
     "Height": "5' 11\"",
     "Weight": "216 lbs",
@@ -1657,7 +1588,6 @@
   },
   {
     "Predicted TFP (Raw, Stage-1+2)": 64.00941467285156,
-    "Predicted TFP (Corrected)": 62.99229049682617,
     "Actual TFP": 64.1,
     "Height": "6' 1\"",
     "Weight": "238 lbs",
@@ -1681,7 +1611,6 @@
   },
   {
     "Predicted TFP (Raw, Stage-1+2)": 56.9176139831543,
-    "Predicted TFP (Corrected)": 55.900489807128906,
     "Actual TFP": 56.9,
     "Height": "5' 10\"",
     "Weight": "216 lbs",
@@ -1705,7 +1634,6 @@
   },
   {
     "Predicted TFP (Raw, Stage-1+2)": 35.771854400634766,
-    "Predicted TFP (Corrected)": 17.377365112304688,
     "Actual TFP": 35.8,
     "Height": "5' 8\"",
     "Weight": "201 lbs",
@@ -1729,7 +1657,6 @@
   },
   {
     "Predicted TFP (Raw, Stage-1+2)": 81.8599853515625,
-    "Predicted TFP (Corrected)": 80.84286499023438,
     "Actual TFP": 81.9,
     "Height": "5' 10\"",
     "Weight": "220 lbs",
@@ -1753,7 +1680,6 @@
   },
   {
     "Predicted TFP (Raw, Stage-1+2)": 53.85160827636719,
-    "Predicted TFP (Corrected)": 52.8344841003418,
     "Actual TFP": 53.8,
     "Height": "6'",
     "Weight": "215 lbs",
@@ -1777,7 +1703,6 @@
   },
   {
     "Predicted TFP (Raw, Stage-1+2)": 31.511280059814453,
-    "Predicted TFP (Corrected)": 15.247078895568848,
     "Actual TFP": 31.5,
     "Height": "5' 11\"",
     "Weight": "224 lbs",
@@ -1801,7 +1726,6 @@
   },
   {
     "Predicted TFP (Raw, Stage-1+2)": 28.81062889099121,
-    "Predicted TFP (Corrected)": 13.896753311157227,
     "Actual TFP": 28.8,
     "Height": "5' 8\"",
     "Weight": "205 lbs",
@@ -1825,7 +1749,6 @@
   },
   {
     "Predicted TFP (Raw, Stage-1+2)": 40.03450393676758,
-    "Predicted TFP (Corrected)": 19.508689880371094,
     "Actual TFP": 0.0,
     "Height": "5' 8\"",
     "Weight": "191 lbs",
@@ -1849,7 +1772,6 @@
   },
   {
     "Predicted TFP (Raw, Stage-1+2)": 27.69183349609375,
-    "Predicted TFP (Corrected)": 13.337355613708496,
     "Actual TFP": 0.0,
     "Height": "5' 9\"",
     "Weight": "198 lbs",
@@ -1873,7 +1795,6 @@
   },
   {
     "Predicted TFP (Raw, Stage-1+2)": 62.099334716796875,
-    "Predicted TFP (Corrected)": 61.082210540771484,
     "Actual TFP": 91.7,
     "Height": "5' 10\"",
     "Weight": "210 lbs",
@@ -1897,7 +1818,6 @@
   },
   {
     "Predicted TFP (Raw, Stage-1+2)": 31.43504524230957,
-    "Predicted TFP (Corrected)": 15.208961486816406,
     "Actual TFP": 31.5,
     "Height": "5' 9\"",
     "Weight": "212 lbs",
@@ -1921,7 +1841,6 @@
   },
   {
     "Predicted TFP (Raw, Stage-1+2)": 0.5155448913574219,
-    "Predicted TFP (Corrected)": 9.999999717180685e-10,
     "Actual TFP": 0.4,
     "Height": "5' 10\"",
     "Weight": "214 lbs",
@@ -1945,7 +1864,6 @@
   },
   {
     "Predicted TFP (Raw, Stage-1+2)": 77.25179290771484,
-    "Predicted TFP (Corrected)": 76.23467254638672,
     "Actual TFP": 77.4,
     "Height": "6'",
     "Weight": "225 lbs",
@@ -1969,7 +1887,6 @@
   },
   {
     "Predicted TFP (Raw, Stage-1+2)": 63.3123779296875,
-    "Predicted TFP (Corrected)": 62.29525375366211,
     "Actual TFP": 63.3,
     "Height": "5' 11\"",
     "Weight": "227 lbs",
@@ -1993,7 +1910,6 @@
   },
   {
     "Predicted TFP (Raw, Stage-1+2)": 17.267080307006836,
-    "Predicted TFP (Corrected)": 8.124979019165039,
     "Actual TFP": 17.3,
     "Height": "5' 10\"",
     "Weight": "211 lbs",
@@ -2017,7 +1933,6 @@
   },
   {
     "Predicted TFP (Raw, Stage-1+2)": 87.41822052001953,
-    "Predicted TFP (Corrected)": 86.4011001586914,
     "Actual TFP": 11.5,
     "Height": "5' 11\"",
     "Weight": "224 lbs",
@@ -2041,7 +1956,6 @@
   },
   {
     "Predicted TFP (Raw, Stage-1+2)": 32.71800994873047,
-    "Predicted TFP (Corrected)": 15.850443840026855,
     "Actual TFP": 32.7,
     "Height": "5' 8\"",
     "Weight": "215 lbs",
@@ -2065,7 +1979,6 @@
   },
   {
     "Predicted TFP (Raw, Stage-1+2)": 22.502342224121094,
-    "Predicted TFP (Corrected)": 10.742609977722168,
     "Actual TFP": 22.4,
     "Height": "6'",
     "Weight": "204 lbs",
@@ -2089,7 +2002,6 @@
   },
   {
     "Predicted TFP (Raw, Stage-1+2)": 1.9463996887207031,
-    "Predicted TFP (Corrected)": 0.4646384119987488,
     "Actual TFP": 1.9,
     "Height": "5' 11\"",
     "Weight": "210 lbs",
@@ -2113,7 +2025,6 @@
   },
   {
     "Predicted TFP (Raw, Stage-1+2)": 0.01535797119140625,
-    "Predicted TFP (Corrected)": 9.999999717180685e-10,
     "Actual TFP": 0.0,
     "Height": "6'",
     "Weight": "233 lbs",
@@ -2137,7 +2048,6 @@
   },
   {
     "Predicted TFP (Raw, Stage-1+2)": 254.8892059326172,
-    "Predicted TFP (Corrected)": 253.87208557128906,
     "Actual TFP": 255.0,
     "Height": "5' 10\"",
     "Weight": "210 lbs",
@@ -2161,7 +2071,6 @@
   },
   {
     "Predicted TFP (Raw, Stage-1+2)": 3.3272228240966797,
-    "Predicted TFP (Corrected)": 1.1550500392913818,
     "Actual TFP": 3.3,
     "Height": "5' 9\"",
     "Weight": "195 lbs",
@@ -2185,7 +2094,6 @@
   },
   {
     "Predicted TFP (Raw, Stage-1+2)": 266.66217041015625,
-    "Predicted TFP (Corrected)": 265.6450500488281,
     "Actual TFP": 266.7,
     "Height": "5' 11\"",
     "Weight": "190 lbs",
@@ -2209,7 +2117,6 @@
   },
   {
     "Predicted TFP (Raw, Stage-1+2)": 43.55655288696289,
-    "Predicted TFP (Corrected)": 21.26971435546875,
     "Actual TFP": 43.5,
     "Height": "5' 10\"",
     "Weight": "215 lbs",
@@ -2233,7 +2140,6 @@
   },
   {
     "Predicted TFP (Raw, Stage-1+2)": 73.92063903808594,
-    "Predicted TFP (Corrected)": 72.90351867675781,
     "Actual TFP": 6.0,
     "Height": "6' 1\"",
     "Weight": "213 lbs",
@@ -2257,7 +2163,6 @@
   },
   {
     "Predicted TFP (Raw, Stage-1+2)": 0.07231521606445312,
-    "Predicted TFP (Corrected)": 9.999999717180685e-10,
     "Actual TFP": 0.0,
     "Height": "5' 11\"",
     "Weight": "216 lbs",
@@ -2281,7 +2186,6 @@
   },
   {
     "Predicted TFP (Raw, Stage-1+2)": 54.66419982910156,
-    "Predicted TFP (Corrected)": 53.64707565307617,
     "Actual TFP": 54.7,
     "Height": "5' 9\"",
     "Weight": "215 lbs",
@@ -2305,7 +2209,6 @@
   },
   {
     "Predicted TFP (Raw, Stage-1+2)": 42.21794891357422,
-    "Predicted TFP (Corrected)": 20.600412368774414,
     "Actual TFP": 42.2,
     "Height": "6' 1\"",
     "Weight": "223 lbs",
@@ -2329,7 +2232,6 @@
   },
   {
     "Predicted TFP (Raw, Stage-1+2)": 37.84635543823242,
-    "Predicted TFP (Corrected)": 18.414615631103516,
     "Actual TFP": 0.2,
     "Height": "5' 11\"",
     "Weight": "225 lbs",
@@ -2353,7 +2255,6 @@
   },
   {
     "Predicted TFP (Raw, Stage-1+2)": 125.15086364746094,
-    "Predicted TFP (Corrected)": 124.13374328613281,
     "Actual TFP": 125.2,
     "Height": "5' 9\"",
     "Weight": "203 lbs",
@@ -2377,7 +2278,6 @@
   },
   {
     "Predicted TFP (Raw, Stage-1+2)": 28.378196716308594,
-    "Predicted TFP (Corrected)": 13.680537223815918,
     "Actual TFP": 28.4,
     "Height": "5' 11\"",
     "Weight": "210 lbs",
@@ -2401,7 +2301,6 @@
   },
   {
     "Predicted TFP (Raw, Stage-1+2)": 26.069751739501953,
-    "Predicted TFP (Corrected)": 12.526314735412598,
     "Actual TFP": 26.1,
     "Height": "6'",
     "Weight": "205 lbs",
@@ -2425,20 +2324,20 @@
   },
   {
     "Model Statistics": {
-      "Mean Squared Error (MSE)": 4453.428553762894,
-      "Root Mean Squared Error (RMSE)": 66.73401346961603,
-      "Mean Absolute Error (MAE)": 51.031470989045644,
-      "Median Absolute Error (Median AE)": 35.4016227722168,
-      "R^2 Score": -0.07009979789621079,
-      "Explained Variance": -0.055512575101103634,
-      "Max Error": 161.57664813995362,
-      "Mean Squared Log Error (MSLE)": 3.8635916795950194,
-      "Poisson Deviance": 86.88988060046871,
-      "Average Error (ME)": 7.791506040663946,
-      "MAPE": 7.066467409423076,
-      "MedAPE": 0.7600682243336062,
-      "Average Accuracy (1 - MAPE)": -6.066467409423076,
-      "Median Accuracy (1 - MedAPE)": 0.2399317756663938,
+      "Mean Squared Error (MSE)": 4341.397373953092,
+      "Root Mean Squared Error (RMSE)": 65.88928117647886,
+      "Mean Absolute Error (MAE)": 54.910587710425965,
+      "Median Absolute Error (Median AE)": 37.64635543823242,
+      "R^2 Score": -0.0431801917039778,
+      "Explained Variance": -0.04293160570682497,
+      "Max Error": 146.23617401123047,
+      "Mean Squared Log Error (MSLE)": 4.532220812800976,
+      "Poisson Deviance": 76.65134781826846,
+      "Average Error (ME)": 1.0171229044596368,
+      "MAPE": 13.158783259484267,
+      "MedAPE": 0.7748734697677856,
+      "Average Accuracy (1 - MAPE)": -12.158783259484267,
+      "Median Accuracy (1 - MedAPE)": 0.2251265302322144,
       "Stage-1 Feature Importances": {
         "TD3": 0.04232143238186836,
         "Weight_190 lbs": 0.03977380320429802,

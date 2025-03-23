@@ -5,7 +5,7 @@ import os
 import warnings
 warnings.filterwarnings("ignore")
 
-# Sklearn-related imports
+
 from sklearn.model_selection import train_test_split, RandomizedSearchCV
 from sklearn.preprocessing import StandardScaler, OneHotEncoder
 from sklearn.compose import ColumnTransformer
@@ -22,18 +22,18 @@ from sklearn.metrics import (
 )
 from xgboost import XGBRegressor
 
-################################################################################
-# 1) Read Data + Remove "Name" Column + Basic Prep
-################################################################################
+
+
+
 df = pd.read_csv("Data/NFLCollegeStats.csv")
 label_column = "TFP"
 
-# Remove "Name" if it exists
+
 if "Name" in df.columns:
     df.drop(columns=["Name"], inplace=True)
     print("✅ Removed 'Name' column from features.")
 
-# Outlier removal (IQR-based)
+
 numeric_cols = df.select_dtypes(include=[np.number]).columns
 for col in numeric_cols:
     Q1 = df[col].quantile(0.25)
@@ -45,29 +45,29 @@ for col in numeric_cols:
 
 print(f"✅ After outlier removal, dataset has {len(df)} rows")
 
-# Separate features & label
+
 X_raw = df.drop(columns=[label_column])
 y = df[label_column]
 
 numeric_features = X_raw.select_dtypes(include=[np.number]).columns.tolist()
 categorical_features = X_raw.select_dtypes(exclude=[np.number]).columns.tolist()
 
-# Train/Validation Split
+
 X_train_raw, X_val_raw, y_train, y_val = train_test_split(
     X_raw, y, test_size=0.2, random_state=42
 )
 
-################################################################################
-# 2) Preprocessor (Scaling + OneHot)
-################################################################################
+
+
+
 preprocessor = ColumnTransformer([
     ("num", StandardScaler(), numeric_features),
     ("cat", OneHotEncoder(handle_unknown="ignore"), categorical_features)
 ])
 
-################################################################################
-# 3) Stage-1 Model (XGBoost) + RandomizedSearch
-################################################################################
+
+
+
 model1_pipeline = Pipeline([
     ("preprocessor", preprocessor),
     ("xgb1", XGBRegressor(
@@ -101,13 +101,13 @@ best_model1 = search_stage1.best_estimator_
 print("\n✅ Stage-1 Best Params:")
 print(search_stage1.best_params_)
 
-# Predict TFP on TRAIN; get residual
+
 train_pred_stage1 = best_model1.predict(X_train_raw)
 residual_train = y_train - train_pred_stage1
 
-################################################################################
-# 4) Stage-2 Model (XGBoost) to Predict Residuals
-################################################################################
+
+
+
 model2_pipeline = Pipeline([
     ("preprocessor", preprocessor),
     ("xgb2", XGBRegressor(
@@ -141,43 +141,32 @@ best_model2 = search_stage2.best_estimator_
 print("\n✅ Stage-2 (Residual) Best Params:")
 print(search_stage2.best_params_)
 
-################################################################################
-# 5) Combine Stage-1 + Stage-2 on Validation
-################################################################################
+
+
+
 val_pred_stage1 = best_model1.predict(X_val_raw)
 val_pred_stage2 = best_model2.predict(X_val_raw)
-val_pred_final_raw = val_pred_stage1 + val_pred_stage2
 
-# Mean error correction
-mean_error_val = np.mean(val_pred_final_raw - y_val)
-val_pred_final_corrected = val_pred_final_raw - mean_error_val
+final_val_pred = val_pred_stage1 + val_pred_stage2
 
-# If below 50, reduce by a fraction (e.g., 50%); not all the way to zero.
-fraction = 0.5  # adjust as you see fit
-mask_below_50 = val_pred_final_corrected < 50
-val_pred_final_corrected[mask_below_50] = val_pred_final_corrected[mask_below_50] * fraction
+final_val_pred = np.clip(final_val_pred, 1e-9, None)
 
-# Ensure strictly positive to avoid Poisson deviance error
-# (anything that becomes negative or zero will be clipped)
-val_pred_final_corrected = np.clip(val_pred_final_corrected, 1e-9, None)
 
-################################################################################
-# 6) Evaluate Metrics (Now that predictions are all > 0)
-################################################################################
-mse = mean_squared_error(y_val, val_pred_final_corrected)
+
+
+mse = mean_squared_error(y_val, final_val_pred)
 rmse = np.sqrt(mse)
-mae = mean_absolute_error(y_val, val_pred_final_corrected)
-med_ae = median_absolute_error(y_val, val_pred_final_corrected)
-r2 = r2_score(y_val, val_pred_final_corrected)
-exp_var = explained_variance_score(y_val, val_pred_final_corrected)
-mx_err = max_error(y_val, val_pred_final_corrected)
-msle = mean_squared_log_error(y_val, val_pred_final_corrected)
-poisson_dev = mean_poisson_deviance(y_val, val_pred_final_corrected)
-avg_error = float(np.mean(val_pred_final_corrected - y_val))
+mae = mean_absolute_error(y_val, final_val_pred)
+med_ae = median_absolute_error(y_val, final_val_pred)
+r2 = r2_score(y_val, final_val_pred)
+exp_var = explained_variance_score(y_val, final_val_pred)
+mx_err = max_error(y_val, final_val_pred)
+msle = mean_squared_log_error(y_val, final_val_pred)
+poisson_dev = mean_poisson_deviance(y_val, final_val_pred)
+avg_error = float(np.mean(final_val_pred - y_val))
 
-# MAPE / MedAPE => "Accuracy"
 mask_nonzero = (y_val != 0)
-ape = np.abs(val_pred_final_corrected[mask_nonzero] - y_val[mask_nonzero]) / np.abs(y_val[mask_nonzero])
+ape = np.abs(final_val_pred[mask_nonzero] - y_val[mask_nonzero]) / np.abs(y_val[mask_nonzero])
 mape = ape.mean()
 medape = np.median(ape)
 avg_acc = 1 - mape
@@ -200,15 +189,13 @@ model_stats = {
     "Median Accuracy (1 - MedAPE)": float(med_acc)
 }
 
-print("\n🔍 Final Post-Processed Metrics (Two-Stage Model + <50 => scale down):")
+print("\n🔍 Final Metrics (using raw stage-1 + stage-2 predictions):")
 for k, v in model_stats.items():
-    if k.endswith("Importances"):
-        continue
     print(f"  {k}: {v:.4f}")
 
-################################################################################
-# 7) Feature Importances (Stage-1 and Stage-2)
-################################################################################
+
+
+
 xgb1 = best_model1.named_steps["xgb1"]
 importances1 = xgb1.feature_importances_
 
@@ -249,28 +236,18 @@ print("\nTop 10 Feature Importances (Stage-2 Residual Model):")
 for feat, imp in feature_importances_stage2[:10]:
     print(f"  {feat}: {imp:.4f}")
 
-################################################################################
-# 8) Predict ALL DATA + Save JSON
-################################################################################
+
+
+
 full_pred_stage1 = best_model1.predict(X_raw)
 full_pred_stage2 = best_model2.predict(X_raw)
 full_pred_raw = full_pred_stage1 + full_pred_stage2
-
-# Mean error shift
-full_pred_corrected = full_pred_raw - mean_error_val
-
-# Scale down if < 50
-mask_below_50_full = full_pred_corrected < 50
-full_pred_corrected[mask_below_50_full] = full_pred_corrected[mask_below_50_full] * fraction
-
-# Clip to ensure strictly positive
-full_pred_corrected = np.clip(full_pred_corrected, 1e-9, None)
+final_full_pred = np.clip(full_pred_raw, 1e-9, None)
 
 all_predictions = []
 for i in range(len(df)):
     row_dict = {
         "Predicted TFP (Raw, Stage-1+2)": float(full_pred_raw[i]),
-        "Predicted TFP (Corrected)": float(full_pred_corrected[i]),
         "Actual TFP": float(y.iloc[i])
     }
     row_features = X_raw.iloc[i].to_dict()
@@ -278,10 +255,9 @@ for i in range(len(df)):
     all_predictions.append(row_dict)
 
 all_predictions.append({"Model Statistics": model_stats})
-
 os.makedirs("Predictions", exist_ok=True)
 output_path = "Predictions/all_predictions.json"
 with open(output_path, "w") as f:
     json.dump(all_predictions, f, indent=2)
 
-print(f"\n✅ Two-Stage Predictions + validation stats saved to: {output_path}")
+print(f"\n✅ Predictions and validation stats saved to: {output_path}")
