@@ -5,7 +5,7 @@ import warnings
 import joblib
 warnings.filterwarnings("ignore")
 
-# Sklearn-related imports
+
 from sklearn.model_selection import train_test_split, RandomizedSearchCV
 from sklearn.preprocessing import StandardScaler, OneHotEncoder
 from sklearn.compose import ColumnTransformer
@@ -22,18 +22,18 @@ from sklearn.metrics import (
 )
 from xgboost import XGBRegressor
 
-################################################################################
-# 1) Read Data + Remove "Name" Column + Basic Prep
-################################################################################
-df = pd.read_csv("Data/NFLCollegeStats.csv")
+
+
+
+df = pd.read_csv("Data/NFLCollegeStatsCSV.csv")
 label_column = "TFP"
 
-# Remove "Name" if it exists
+
 if "Name" in df.columns:
     df.drop(columns=["Name"], inplace=True)
     print("✅ Removed 'Name' column from features.")
 
-# Outlier removal (IQR-based)
+
 numeric_cols = df.select_dtypes(include=[np.number]).columns
 for col in numeric_cols:
     Q1 = df[col].quantile(0.25)
@@ -44,29 +44,29 @@ for col in numeric_cols:
     df = df[(df[col] >= lower_bound) & (df[col] <= upper_bound)]
 print(f"✅ After outlier removal, dataset has {len(df)} rows")
 
-# Separate features & label
+
 X_raw = df.drop(columns=[label_column])
 y = df[label_column]
 
 numeric_features = X_raw.select_dtypes(include=[np.number]).columns.tolist()
 categorical_features = X_raw.select_dtypes(exclude=[np.number]).columns.tolist()
 
-# Train/Validation Split
+
 X_train_raw, X_val_raw, y_train, y_val = train_test_split(
     X_raw, y, test_size=0.2, random_state=42
 )
 
-################################################################################
-# 2) Preprocessor (Scaling + OneHot)
-################################################################################
+
+
+
 preprocessor = ColumnTransformer([
     ("num", StandardScaler(), numeric_features),
     ("cat", OneHotEncoder(handle_unknown="ignore"), categorical_features)
 ])
 
-################################################################################
-# 3) Stage-1 Model (XGBoost) + RandomizedSearch
-################################################################################
+
+
+
 model1_pipeline = Pipeline([
     ("preprocessor", preprocessor),
     ("xgb1", XGBRegressor(
@@ -99,13 +99,13 @@ best_model1 = search_stage1.best_estimator_
 print("\n✅ Stage-1 Best Params:")
 print(search_stage1.best_params_)
 
-# Predict on TRAIN; compute residuals
+
 train_pred_stage1 = best_model1.predict(X_train_raw)
 residual_train = y_train - train_pred_stage1
 
-################################################################################
-# 4) Stage-2 Model (XGBoost) to Predict Residuals
-################################################################################
+
+
+
 model2_pipeline = Pipeline([
     ("preprocessor", preprocessor),
     ("xgb2", XGBRegressor(
@@ -138,18 +138,18 @@ best_model2 = search_stage2.best_estimator_
 print("\n✅ Stage-2 (Residual) Best Params:")
 print(search_stage2.best_params_)
 
-################################################################################
-# 5) Combine Stage-1 + Stage-2 on Validation (Raw Predictions)
-################################################################################
+
+
+
 val_pred_stage1 = best_model1.predict(X_val_raw)
 val_pred_stage2 = best_model2.predict(X_val_raw)
-# Raw combined prediction (without any bias correction)
-final_val_pred = val_pred_stage1 + val_pred_stage2
-final_val_pred = np.clip(final_val_pred, 1e-9, None)  # ensure positivity
 
-################################################################################
-# 6) Evaluate Metrics (Using Raw Predictions)
-################################################################################
+final_val_pred = val_pred_stage1 + val_pred_stage2
+final_val_pred = np.clip(final_val_pred, 1e-9, None)  
+
+
+
+
 mse = mean_squared_error(y_val, final_val_pred)
 rmse = np.sqrt(mse)
 mae = mean_absolute_error(y_val, final_val_pred)
@@ -189,10 +189,10 @@ print("\n🔍 Final Metrics (using raw stage-1 + stage-2 predictions):")
 for k, v in model_stats.items():
     print(f"  {k}: {v:.4f}")
 
-################################################################################
-# 7) Save the Model to Joblib
-################################################################################
-# Save the trained stage-1 and stage-2 models as a dictionary
+
+
+
+
 model_object = {
     "stage1": best_model1,
     "stage2": best_model2,
