@@ -24,7 +24,10 @@ X_train, X_test, y_train, y_test = train_test_split(
 )
 
 # 6. Train the Random Forest model
-model = RandomForestClassifier(n_estimators=100, random_state=42)
+model = RandomForestClassifier(
+    n_estimators=100,
+    random_state=42,
+    )
 model.fit(X_train, y_train)
 
 # 7. Evaluate
@@ -48,4 +51,36 @@ df_prospects['PredictedTier'] = predicted_tiers
 # 12. View or export predictions
 print(df_prospects[['Name', 'PredictedTier']])
 # Optionally save to file
-df_prospects.to_csv('Data/predicted_prospect_tiers.csv', index=False)
+#df_prospects.to_csv('Data/predicted_prospect_tiers.csv', index=False)
+
+#13 View feature importances
+import matplotlib.pyplot as plt
+import numpy as np
+
+# Get feature importances as percentages
+importances = model.feature_importances_
+importances_pct = importances * 100
+indices = np.argsort(importances_pct)[::-1]
+feature_names = [features[i] for i in indices]
+
+# Print in console
+print("\nFeature Importances (as %):")
+for i, idx in enumerate(indices):
+    print(f"{i + 1}. {features[idx]}: {importances_pct[idx]:.2f}%")
+
+# Plot with percentages and value labels
+plt.figure(figsize=(10, 6))
+bars = plt.bar(range(len(importances_pct)), importances_pct[indices], align='center')
+plt.xticks(range(len(importances_pct)), feature_names, rotation=45, ha='right')
+plt.title("Feature Importance (%)")
+plt.ylabel("Importance (%)")
+
+# Add % labels on each bar
+for bar, importance in zip(bars, importances_pct[indices]):
+    height = bar.get_height()
+    plt.text(bar.get_x() + bar.get_width() / 2, height + 0.5, f"{importance:.1f}%", 
+             ha='center', va='bottom', fontsize=9)
+
+plt.tight_layout()
+plt.show()
+
