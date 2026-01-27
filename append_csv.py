@@ -2,9 +2,9 @@ import pandas as pd
 import os
 
 # Set the directory where your CSV files are
-folder_path = 'Data/Drafted'
+folder_path = 'Data/DraftClassData'
 
-skip_file = '2024_Drafted_RB.csv'
+skip_files = {'2025_Drafted_RB.csv', '2024_Drafted_RB.csv', 'all_drafted_RB.csv'}
 
 # Get a list of all CSV files in the folder
 csv_files = [file for file in os.listdir(folder_path) if file.endswith('.csv')]
@@ -14,7 +14,7 @@ dataframes = []
 
 # Read and store each CSV into the list
 for file in csv_files:
-    if file == skip_file:
+    if file in skip_files:
         print(f"Skipping file: {file}")
         continue  # Skip the specified file
     df = pd.read_csv(os.path.join(folder_path, file))
@@ -24,4 +24,4 @@ for file in csv_files:
 combined_df = pd.concat(dataframes, ignore_index=True)
 
 # Save the combined DataFrame to a new CSV
-combined_df.to_csv('Data/Drafted/all_drafted_RB.csv', index=False)
+combined_df.to_csv('Data/DraftClassData/all_drafted_RB.csv', index=False)
