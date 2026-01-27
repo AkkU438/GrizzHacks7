@@ -4,7 +4,7 @@ import os
 # Set the directory where your CSV files are
 folder_path = 'Data/DraftClassData'
 
-skip_files = {'2025_Drafted_RB.csv', '2024_Drafted_RB.csv', 'all_drafted_RB.csv'}
+skip_files = {'2025_Drafted_RB.csv', 'all_drafted_RB.csv'}
 
 # Get a list of all CSV files in the folder
 csv_files = [file for file in os.listdir(folder_path) if file.endswith('.csv')]
